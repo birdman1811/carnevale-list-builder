@@ -1,0 +1,205 @@
+h2{
+    text-align: center;
+}
+
+p{
+    color: whitesmoke
+}
+
+
+.characterlist {
+    list-style-type: disc;
+    padding: 2;
+    text-align: left;
+}
+
+.characterlist .text{
+    color: whitesmoke;
+    font-size: large;
+    text-align: left;
+}
+
+.equipmentlist {
+    list-style-type: disc;
+    padding: 2;
+    text-align: left;
+}
+
+.equipmentlist .text{
+    color: whitesmoke;
+    font-size: large;
+}
+
+.errorlist{
+    list-style-type: disc;
+    padding: 2;
+    text-align: left;
+}
+
+.delete{
+    padding:2px;
+}
+.deletechar{
+    height:15px;
+    width: 15px;
+}
+
+.charname{
+    color: whitesmoke;
+    text-align: left;
+}
+
+.costlabel{
+    color: whitesmoke;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.deletebuttonspan{
+    text-align: right;
+}
+
+.errorlist .text{
+    color: whitesmoke;
+    font-size: medium;
+}
+
+button{
+    color: #9a191a;
+    background-color: black;
+    border: #9a191a;
+    border-style: groove;
+    padding: 10px;
+    font-size: medium;
+    
+}
+
+button:hover{
+    background-color: coral;
+}
+
+button:active{
+    background-color: aliceblue;
+}
+
+.print {
+height: 50px;
+width: 50px;
+}
+
+.printimage{
+height: 30px;
+width: 30px 
+}
+
+.reset{
+height: 50px;
+width: 50px;
+}
+
+.resetimage{
+height: 30px;
+width: 30px;
+}
+
+.changemainfaction{
+height: 50px;
+width: 50px;
+}
+
+.changemainfactionimage{
+height: 30px;
+width: 30px;    
+}
+
+.classheader{
+    font-family: buckingham;
+    font-size: large;
+    text-align: left;
+    color: whitesmoke;
+    padding-left: 5px;
+    
+}
+
+.costtext{
+    font-family: buckingham;
+    font-size: xx-large;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.characterarea{
+    width: 100%;
+}
+
+.charactertable {
+    display: grid;
+    grid-template-columns: 1000pc 500pc 1000pc;   
+    grid-template-rows: auto; 
+    float: left;
+    grid-column-gap: 2px;
+
+    
+}
+
+.charactertable > div {    
+    text-align: center;    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;    
+} 
+
+.buttonarea{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:800px){
+
+.charname{
+    color: whitesmoke;
+    text-align: left;
+}
+
+.costlabel{
+    color: whitesmoke;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.print {
+    height: 60px;
+    width: 60px;    
+    }
+    
+.printimage{
+    height: 30px;
+    width: 30px ;
+    }
+
+.reset{
+    height: 60px;
+    width: 60px;
+    }
+        
+.resetimage{
+     height: 30px;
+     width: 30px;
+    }
+
+.changemainfaction{
+    height: 60px;
+    width: 60px;
+    }
+        
+    .changemainfactionimage{
+    height: 30px;
+    width: 30px;    
+        }
+}

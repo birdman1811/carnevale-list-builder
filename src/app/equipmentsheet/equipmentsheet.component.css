@@ -1,0 +1,95 @@
+.container{
+    height: 200px;
+    width: 400px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 300px;    
+    float:left;
+    text-align: center;   
+  }
+
+  .mat-dialog-content{
+    color: #9a191a; 
+    text-align: center;
+    align-content: center; 
+    align-self: center;  
+}
+
+.column1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100%;
+    float: left;
+}
+
+
+.column2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100%;
+    float: left;
+}
+
+.equipmentrules{
+    color: #9a191a;
+    font-size: medium;
+}
+
+.equipmentcost{
+    color: #9a191a;
+    font-size: medium;
+}
+
+button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Arial;
+  }
+   
+  button:hover {
+    background-color: #cfd8dc;
+  }
+   
+  button.print {
+    position: relative;
+    left: 194px;
+    top: -32px;
+    background-color: gray !important;
+    color: white;
+  }
+
+  button{
+    color: #9a191a;
+    background-color: darkgrey;
+    border: #9a191a;
+    border-style: groove;
+    padding: 10px;
+    font-size: medium; 
+       
+}
+
+button:hover{
+    background-color: black
+}
+
+button:active{
+    background-color: aliceblue;
+}
+
+@media screen and (max-width:700px){    
+    .wrapper {
+        
+        display: grid;
+        grid-template-columns: 200px;;
+        grid-template-rows: 100px 150px;    
+        float:left;
+        text-align: center;   
+      }
+}
+

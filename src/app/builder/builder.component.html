@@ -1,0 +1,83 @@
+<!-- Grid layout set-->
+<div class="header"><app-title></app-title></div>
+
+<ul class="factions">
+    <li *ngFor="let faction of factions" (click)="onFactionSelect(faction)">
+      <span class="factionbadge"><img class  = "factionicon" src="{{faction.reverseicon}}" height="100" width="100"></span>
+      </li>
+</ul>
+
+  <h1>{{faction.faction}}</h1>
+
+<div class="summary">
+    <app-summary [gang]="gang"></app-summary>    
+</div>
+
+<div class="characterselect">
+<ul class="carnevalecharacters">
+    
+        <h2>Leaders</h2>    
+    
+    <li *ngFor="let character of leaderlist" (click)="onSelect(character)">
+           
+        <span class="characterbutton">           
+            <div class = "characterbuttonimage"><img class = "characterbuttonimage" src="{{character.imageUrl}}"></div>            
+            <div class = "ducatsbox">{{character.ducats}}</div>
+        </span>        
+        </li>         
+</ul>
+</div>
+
+
+<div class="characterselect">
+<ul class="carnevalecharacters">
+       
+        <h2>Heroes</h2>
+        
+        <li *ngFor="let character of herolist" (click)="onSelect(character)">
+            <span class="characterbutton">                
+                <div class = "characterbuttonimage"><img class = "characterbuttonimage" src="{{character.imageUrl}}"></div>                
+                <div class = "ducatsbox">{{character.ducats}}</div>
+            </span>             
+        </li>           
+</ul>  
+</div>
+
+
+<div class="characterselect">
+<ul class="carnevalecharacters">
+
+            <h2>Henchmen</h2>
+            
+            <li *ngFor="let character of henchmenlist" (click)="onSelect(character)">
+                <span class="characterbutton">                    
+                    <div class = "characterbuttonimage"><img class = "characterbuttonimage" src="{{character.imageUrl}}"></div>                    
+                    <div class = "ducatsbox">{{character.ducats}}</div>
+                </span>        
+            </li> 
+</ul>
+</div>
+
+<div class="characterselect">
+    <ul class = "equipment">
+        <h2>Equipment</h2>
+
+        <li *ngFor="let equipment of equipmentList"(click)="onEquipmentClick(equipment)" >
+            <span class="equipmentframe">
+                <div class = "equipmentname">{{equipment.equipment}}</div>
+                <div class = "equipmentimage"><img class = "equipmentimage" src="{{equipment.icon}}"></div>
+                <div class = "equipmentcost">Ducats: {{equipment.equipmentCost}}</div>
+            </span>
+        </li>
+    </ul>
+</div>
+
+
+<div class="footer"><app-footer></app-footer></div>
+
+ 
+
+
+
+
+

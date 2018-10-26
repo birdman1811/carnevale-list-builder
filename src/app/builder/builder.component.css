@@ -1,0 +1,357 @@
+
+
+  h1{
+    
+    
+    padding: 10px;
+  }
+
+  h2{
+    
+    padding-left: 30px;
+    font-family: buckingham;
+  }
+
+  /*character list Select Style*/
+  .carnevalecharacters {
+    list-style-type: none;     
+    
+    text-align: center;
+    padding: 10px;    
+  }  
+
+  /*Character Select Style*/
+  .characterselect{
+    float: left;
+    width: 69%;
+    text-align: center;
+    
+    
+    padding-bottom: 30px;    
+  }
+
+  /*Summary Style*/
+  .summary{
+    float: right;
+    width: 30%;
+    height: 80%;     
+    background-color: #13100d;
+    padding-bottom: 10px;
+    
+  }
+
+  .summary .ducats {
+    color: #9a191a;
+    font-size: medium;
+  }
+
+  .seperator{
+    height: 300;
+    width: 100%;
+    float:left;
+  }
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+
+  /* Character Button style */
+  .carnevalecharacters .characterbutton{
+    float: left;
+    width: 235px;
+    height: 235px;
+    text-align: center;
+    
+    color: #9a191a;
+    
+  }
+
+  /*Character Name Layout*/
+  .carnevalecharacters .characterbutton .charactername {
+    text-align: center;
+    font-family: buckingham;
+    font-size: larger
+  }
+
+  /*Character Button Image Panel*/
+  .carnevalecharacters .characterbutton .characterbuttonimage {
+    float: left;
+    width: 230px;
+    height:230px;
+  }
+
+  /* hover button style*/
+
+  .carnevalecharacters .characterbutton:hover{
+    background-color: #9a191a;
+    color: black;
+  }
+
+  /* On Click Style */
+  .carnevalecharacters .characterbutton:active{
+    background-color: antiquewhite;
+  }
+
+  /*Character Button Faction Badge*/
+  .carnevalecharacters .characterbutton .factionimage {
+    float: right;
+    width: 100;
+  }
+
+  /*Character Cost Layout*/
+  .carnevalecharacters .characterbutton .ducatsbox {
+    position: relative;  
+    color: whitesmoke;  
+    left: 160px;
+    top: -54px; 
+    width: 20px;       
+    font-size: xx-large;    
+    font-family: buckingham;
+  }
+
+  /*Equipment Area Design*/
+  .equipment{
+    list-style-type: none;
+    padding: 10px;
+  }
+
+  .equipment .equipmentframe{
+    float: left;
+    width: 280px;
+    text-align: center;
+    border-style: groove;
+    border-color: #9a191a;
+    padding: 10px;
+    color: #9a191a;
+    background-color: #13100d;
+  } 
+
+  .equipment .equipmentframe:hover{
+    background-color: #9a191a;
+    color: black;
+  }
+
+  .equipment .equipmentframe:hover{
+    background-color: #9a191a;
+    color: black;
+    
+  }
+
+  /* On Click Style */
+  .equipment .equipmentframe:active{
+    background-color: antiquewhite;
+  }
+
+  .equipment .equipmentframe .equipmentname{
+    text-align: center;
+    font-family: buckingham;
+    font-size: larger
+  }
+
+  .equipment .equipmentframe .equipmentimage{
+    float: left;
+    width: 200;
+  }
+
+  .equipment .equipmentframe .equipmentimage:hover{
+    float: left;
+    width: 200;
+    background-color: #13100d;
+  }
+
+  .equipment .equipmentframe .equipmentcost{
+    float: right;
+    width: 100;    
+    font-size: large;
+    clear: right;
+  }
+
+  .factionicon{
+    width: 100px;
+    height: 100px;
+  }
+
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:800px){
+    .factionselect, .summary, .characterselect, .characterselect, .characterselect,  .footer  {
+      width :100%;
+    }
+
+    .factionicon{
+      height: 50px;
+      width: 50px;
+    }
+
+    /*Character Button Image Panel*/
+  .carnevalecharacters .characterbutton .characterbuttonimage {
+    float: left;
+    width: 100px;
+    height:100px;
+  }
+
+    /* Character Button style */
+  .carnevalecharacters .characterbutton{
+    float: left;
+    width: 105px;
+    height: 105px;
+    text-align: center;
+    
+    padding: 10px;
+    color: #9a191a;
+    background-color: #13100d
+  }
+
+  .carnevalecharacters .li{
+    display: inline-block;
+  }
+
+  /*Character Cost Layout*/
+  .carnevalecharacters .characterbutton .ducatsbox {
+    position: relative;  
+    color: whitesmoke;  
+    left: 73px;
+    top: -30px; 
+    width: 20px;       
+    font-size:large;    
+    font-family: buckingham;
+  }
+
+  .equipment .equipmentframe{
+    float: left;
+    width: 200px;
+    text-align: center;
+    border-style: groove;
+    border-color: #9a191a;
+    padding: 10px;
+    color: #9a191a;
+    background-color: #13100d;
+  } 
+      }
+  .characterbuttonimage{
+    height: 120px;
+    width: 120px;
+  }
+  
+
+  /*footer style*/
+  .footer{
+    float: left;    
+    text-align: center;    
+    width:100%;
+    background-color: #13100d;
+    text-align: center;
+    
+  }
+
+  /*Create 7 columns, equal, float next to eachother*/
+.column {
+  float: left;
+  padding: 10px;
+}  
+
+/*faction list Select Style*/
+.factions {
+  list-style-type: none;
+  padding: 0;    
+}
+
+.factions .factionbadge{
+  float: left;
+  width: 100;
+  text-align: center;    
+  color: #13100d;
+  font-style: oblique;
+  font-size: large;    
+  padding: 4%;
+  height: 100px;
+  width: 100px;
+}       
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;    
+}  
+
+button {
+  background-color: #13100d;
+  color: #9a191a;
+  padding: 5px 10px;
+  border: #9a191a;
+  border-style: groove; 
+  height: 200px;  
+  width: 200px;
+  font-size: larger;
+} 
+
+button:hover {
+  background-color: #eae3d2;
+  border-style: ridge;
+}
+/*Equipment Area Design*/
+.equipment{
+  list-style-type: none;
+  padding: 10px;
+}
+
+.equipment .equipmentframe{
+  float: left;
+  width: 100px;
+  height: 150px;
+  text-align: center;
+  border-style: groove;
+  border-color: #9a191a;
+  padding: 10px;
+  color: #9a191a;
+  background-color: #13100d;
+} 
+
+.equipment .equipmentframe:hover{
+  background-color: #9a191a;
+  color: black;
+}
+
+.equipment .equipmentframe:hover{
+  background-color: #9a191a;
+  color: black;
+  
+}
+
+/* On Click Style */
+.equipment .equipmentframe:active{
+  background-color: antiquewhite;
+}
+
+.equipment .equipmentframe .equipmentname{
+  text-align: center;
+  font-family: buckingham;
+  font-size: larger
+}
+
+.equipment .equipmentframe .equipmentimage{
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.equipment .equipmentframe .equipmentimage:hover{
+  float: left;
+  width: 50px;
+  background-color: #13100d;
+}
+
+.equipment .equipmentframe .equipmentcost{
+  float: right;
+  width: 100px;    
+  font-size: large;
+  clear: right;
+}
+
+  
+

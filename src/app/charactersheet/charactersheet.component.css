@@ -1,0 +1,591 @@
+.tableheader {
+    color: white;
+    background-color: #9a191a;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding: 1px;
+    font-family: buckingham;
+}
+    
+
+.mat-dialog-actions{
+    padding-left: 10px;
+}
+
+.keywords{
+    list-style-type: none;
+    
+    padding: 0;
+}
+
+.keywords .text {
+    color: black;
+    font-size: small;
+}
+
+.specialrules{
+    list-style-type: none;
+    padding: 5px;
+    
+}
+
+.rulesheader{
+    color: white;
+    border: 10px #9a191a;
+    border-style: double;
+    background-color: #9a191a;
+    font-family: buckingham;
+}
+
+.specialrules .text {
+    color: white;
+    font-size: small;
+    
+}
+
+.specialrules li {
+    display: inline-block;
+}
+
+.uniquerules{
+    list-style-type: none;
+    padding: 0;
+    border: 10px #9a191a;
+    border-style: double;
+    padding: 5px;
+    
+}
+
+.whiteheader{
+    color: #9a191a;
+    font-family: buckingham;
+}
+
+.uniquerules .text {
+    color: #9a191a;
+    font-size: small;
+}
+
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 300px 650px;    
+    float:left;
+    background-color: rgb(247, 225, 225); 
+    border-block-end-color: #9a191a;
+    border-style: double;  
+    background-image: radial-gradient(white 1%, rgb(247, 225, 225)90%, #9a191a );
+  }
+
+.column1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 285px 30px 30px;
+    float: left;
+    padding:5px;
+}
+
+.baseandcostwrapper {
+    display: grid;
+    grid-template-columns: 40px;
+    float: left;
+}
+
+.basesection {
+color: #9a191a;
+}
+
+.basesection .text{
+    position: relative;
+    top: -35px;
+    right: -10px;
+}
+
+.baseimage{
+    height: 40px;
+    width: 40px;
+}
+
+.charimagespace{
+    color: #9a191a
+}
+
+.charimagespace .costsection {
+    position: relative;
+    top: -80px;
+    left: 220px;
+    width: 10px;
+    font-size: xx-large;
+    color: aliceblue;
+    
+}
+
+.keywordsection {
+    font-style: italic;
+}
+
+.column2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40% 60%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.statsattsweaponscontainer{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    float: left;
+}
+
+.statsattribcontainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    float: left;
+}
+
+.statstable {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 50% 50%;
+    float: left;
+    grid-column-gap: 2px;
+    text-align: center;
+    border:10px #9a191a;
+    border-style: double;
+}
+
+.attributestable {
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px;
+    float: left;
+    grid-column-gap: 2px;
+    text-align: center;
+    color: black;    
+    border: 10px;
+    border-color: #9a191a;
+    border-style: double;
+    
+}
+
+.attimg{
+    height: 50px;
+    width: 50px;
+}
+
+.attributestable .text{
+    color: #9a191a;
+    font-family: buckingham;
+    position: relative;
+    top: -25px;
+    
+}
+
+.actionatt {
+    position: relative;
+    top: -40px;
+    
+}
+
+.lifeatt {
+    position: relative;
+    top: -40px;
+    }
+.willatt {
+    position: relative;
+    top: -40px;
+}
+
+.commandatt {
+    position: relative;
+    top: -40px;
+}
+
+
+
+.weaponstable {
+    display: grid;
+    grid-template-columns: 148px 48px 48px 48px 48px 280px;
+    grid-template-rows: 20px auto;
+    float: right;
+    grid-column-gap: 2px;
+    border: 2px solid #9a191a;
+    box-sizing: border-box;
+}
+
+.weaponstable > div {
+    border: 2px solid #9a191a;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.weaponnames{
+    list-style-type: none;
+    padding: 0;    
+}
+
+.weaponnames .text{
+    color: #9a191a;
+    font-size: small;    
+}
+
+.weaponranges{
+    list-style-type: none;
+    padding: 0;
+}
+
+.weaponranges .text{
+    color: #9a191a;
+    font-size: small;
+    text-align: center;
+}
+
+.weaponevade{
+    list-style-type: none;
+    padding: 0;
+}
+
+.weaponevade .text{
+    color: #9a191a;
+    font-size: small;
+    text-align: center;
+}
+
+.weapondamage{
+    list-style-type: none;
+    padding: 0;
+}
+
+.weapondamage .text{
+    color: #9a191a;
+    font-size: small;
+    text-align: center;
+}
+
+.weaponpenetration{
+    list-style-type: none;
+    padding: 0;
+}
+
+.weaponpenetration .text{
+    color: #9a191a;
+    font-size: small;
+    text-align: center;
+}
+
+.weaponabilities{
+    list-style-type: none;
+    padding: 0;
+}
+
+.weaponabilities li{
+    display: inline-block;
+}
+
+.weaponabilities .text{
+    color: #9a191a;
+    font-size: small;
+    float: left;
+}
+
+
+
+.rulescontainer {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 20% 80%;
+    float: left;
+}
+
+button{
+    color: #9a191a;
+    background-color: darkgrey;
+    border: #9a191a;
+    border-style: groove;
+    padding: 10px;
+    font-size: medium;    
+}
+
+button:hover{
+    background-color: black
+}
+
+button:active{
+    background-color: aliceblue;
+}
+
+.charimage{
+    height:280px;
+    width:280px;
+}
+
+@media screen and (max-width:800px){    
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 300px;    
+        float:left;
+        background-color: rgb(247, 225, 225); 
+        border-block-end-color: #9a191a;
+        border-style: double;  
+        background-image: radial-gradient(white 1%, rgb(247, 225, 225)90%, #9a191a );
+      }
+
+      .column1 {
+        display: grid;
+        grid-template-columns: 160px 140px;
+        grid-template-rows: 155px ;
+        float: left;
+        padding:5px;
+    }
+
+      .charimage{
+          height:150px;
+          width:150px;
+      }
+
+      .charimagespace .costsection {
+        position: relative;
+        top: -38px;
+        left: 110px;
+        width: 10px;
+        font-size: large;
+        color: whitesmoke;
+    }
+    
+.keywordsection {
+    font-style: italic;
+}
+
+    .keywords{               
+        padding: 0;
+        list-style-type: disc;
+    }
+    
+    .keywords .text {
+        color: black;
+        font-size: xx-small;
+    }
+
+    .keywords .li{    
+    list-style: disc;
+    }
+
+    .tableheader {
+        color: white;
+        background-color: #9a191a;
+        border-bottom-style: solid;
+        border-width: 1px;
+        padding: 1px;
+        font-family: buckingham;
+        font-size: xx-small;
+    }
+
+    .statstable {
+        display: grid;
+        grid-template-columns: 43px 43px 43px 43px 43px;
+        grid-template-rows: 50% 50%;
+        float: left;
+        grid-column-gap: 2px;
+        text-align: center;
+        border:10px #9a191a;
+        border-style: double;
+        font-size: small
+    }
+
+    .attimg{
+        height:30px;
+        width: 30px;
+    }
+
+    .attributestable {
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        float: left;
+        grid-column-gap: 2px;
+        text-align: center;
+        color: white;
+        border: 10px;
+        border-color: #9a191a;
+        border-style: double;
+    }
+    
+    .attributestable .text{
+        display: none;
+    }   
+    
+    .actionatt {
+     position: relative;
+    top: -30px;
+    }
+    
+    .lifeatt {
+        position: relative;
+    top: -30px;
+        }
+    .willatt {
+        position: relative;
+    top: -30px;
+    }
+    
+    .commandatt {
+        position: relative;
+    top: -30px;
+    }
+
+    .rulesheader{
+        color: white;
+        border: 10px #9a191a;
+        border-style: double;
+        background-color: #9a191a;
+        font-family: buckingham;
+        font-size: small;
+    }
+
+    .rulescontainer {
+        display: grid;
+        grid-template-columns: 270px;
+        grid-template-rows: 100%;
+        float: left;
+    }
+
+    .specialrules{
+        list-style-type: disc;
+        padding: 5px;
+        Width: 250px;
+        height: auto;
+    }
+    
+    .specialrules .text {
+        color: white;
+        font-size: x-small;
+        
+    }
+    
+    .specialrules li {
+        color: white;
+        list-style: disc
+    }
+
+    .uniquerules{
+        list-style-type: none;
+        padding: 0;        
+        padding: 5px;        
+    }
+    
+    .whiteheader{
+        color: #9a191a;
+        font-family: buckingham;
+    }
+    
+    .uniquerules .text {
+        color: #9a191a;
+        font-size: x-small;
+    }
+    
+
+    .weaponstable {
+        display: grid;
+        grid-template-columns: 55px 26px 26px 26px 26px 125px;
+        grid-template-rows: 20px auto;
+        float: left;
+        grid-column-gap: 0px;
+        border: 2px solid #9a191a;
+        box-sizing: border-box;
+        font-size: xx-small;
+    }
+    
+    .weaponstable > div {
+        border: 2px solid #9a191a;
+        box-sizing: border-box;
+        text-align: center;
+        
+    }
+    
+    .weaponnames{
+        list-style-type: none;
+        padding: 0;    
+    }
+    
+    .weaponnames .text{
+        color: #9a191a;
+        font-size: 4pt;    
+    }
+    
+    .weaponranges{
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .weaponranges .text{
+        color: #9a191a;
+        font-size: xx-small;
+        text-align: center;
+    }
+    
+    .weaponevade{
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .weaponevade .text{
+        color: #9a191a;
+        font-size: xx-small;
+        text-align: center;
+    }
+    
+    .weapondamage{
+        list-style-type: none;
+        
+    }
+    
+    .weapondamage .text{
+        color: #9a191a;
+        font-size: xx-small;
+        text-align: center;
+        
+    }
+    
+    .weaponpenetration{
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .weaponpenetration .text{
+        color: #9a191a;
+        font-size: xx-small;
+        text-align: center;
+    }
+    
+    .weaponabilities{
+        list-style-type: none;
+        padding:0px;
+    }
+    
+    .weaponabilities li{
+        display: inline-block;
+        
+    }
+    
+    .weaponabilities .text{
+        color: #9a191a;
+        font-size: 4pt;
+        float: left;
+        text-align: left;
+        
+    }
+
+    
+    
+    
+}
+
+
+
+
+

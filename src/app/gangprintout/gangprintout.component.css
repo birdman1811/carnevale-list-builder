@@ -1,0 +1,710 @@
+.tableheader {
+    color: white;
+    background-color: #9a191a;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.mat-dialog-content{
+    color: #9a191a;    
+}
+
+.commandimg{
+    width: 450px;
+     height:100px;
+}
+
+.charimage{
+    width: 190px;
+    height: 190px;
+}
+
+.charimagespace{
+    color: #9a191a
+}
+
+.charimagespace .costsection {
+    position: relative;
+    top: -50px;
+    left: 140px;
+    width: 10px;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+.keywords{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+.keywords .text {
+    color: black;
+    font-size: small;
+    display: inline-block;
+}
+
+.specialrules{
+    list-style-type: none;
+    padding: 0;
+}
+
+.specialrules .text {
+    color: white;
+    font-size: small;    
+}
+
+.listheader{
+    text-align: center
+}
+
+.specialrules li {
+    display: inline-block;
+}
+
+.uniquerules{
+    list-style-type: none;
+    padding: 0;
+}
+
+.uniquerules .text {
+    color: #9a191a;
+    font-size: small;
+}
+
+.weaponnames{
+    list-style-type: none;
+    padding: 0;    
+}
+
+.weaponnames .text{
+    color: #9a191a;
+    font-size: small;    
+}
+
+.weaponranges{
+    list-style-type: none;
+    padding: 0;
+}
+
+.weaponranges .text{
+    color: #9a191a;
+    font-size: small;
+    text-align: center;
+}
+
+.weaponevade{
+    list-style-type: none;
+    padding: 0;
+}
+
+.weaponevade .text{
+    color: #9a191a;
+    font-size: small;
+    text-align: center;
+}
+
+.weapondamage{
+    list-style-type: none;
+    padding: 0;
+}
+
+.weapondamage .text{
+    color: #9a191a;
+    font-size: small;
+    text-align: center;
+}
+
+.weaponpenetration{
+    list-style-type: none;
+    padding: 0;
+}
+
+.weaponpenetration .text{
+    color: #9a191a;
+    font-size: small;
+    text-align: center;
+}
+
+.weaponabilities{
+    list-style-type: none;
+    padding: 0;
+}
+
+.weaponabilities li{
+    display: inline-block;
+    text-align: left;
+}
+
+.weaponabilities .text{
+    color: #9a191a;
+    font-size: small;
+    float: left;
+    text-align: left;
+}
+
+.container{
+    height: auto;
+    width: 1050px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 580px;    
+    float:left;
+    height: auto;       
+  }
+
+.column1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    float: left;
+}
+
+.baseandcostwrapper {
+    display: grid;
+    grid-template-columns: 4vw 4vw;
+    float: right;
+    position: relative;
+    top: -40px;
+    right: -100px;
+}
+
+.basesection {
+    color: #9a191a;
+    }
+    
+    .basesection .text{
+        position: relative;
+        top: -35px;
+        right: -10px;
+    }
+    
+    .baseimage{
+        height: 40px;
+        width: 40px;
+    }
+
+
+.keywordsection {
+    font-style: italic;
+}
+
+.specrulescontainer{
+    color: aliceblue;
+}
+
+.column2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40% 60%;
+    float: left;
+}
+
+.statsattsweaponscontainer{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    float: left;
+}
+
+.statsattribcontainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    float: left;
+}
+
+.statstable {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    grid-template-rows: 50% 50%;
+    float: left;
+    grid-column-gap: 2px;
+    text-align: center;
+}
+
+.attributestable {
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px;
+    float: left;
+    grid-column-gap: 2px;
+    text-align: center;
+    color: black;
+    
+    position: relative;
+    top: -50px;
+}
+
+.attimg{
+    height: 50px;
+    width: 50px;
+}
+
+.attributestable .text{
+    color: #9a191a;
+}
+
+.actionatt {
+    position: relative;
+    top: -40px;
+}
+
+.lifeatt {
+    position: relative;
+    top: -40px;
+    }
+.willatt {
+    position: relative;
+    top: -40px;
+}
+
+.commandatt {
+    position: relative;
+    top: -40px;
+}
+
+.weaponstableheader{
+    color: white;
+    background-color: #9a191a;
+    
+}
+
+.weaponstable {
+    display: grid;
+    grid-template-columns: 145px 45px 45px 45px 45px 250px;
+    grid-template-rows: 20px auto;
+    float: right;    
+    border: 2px solid #9a191a;
+    box-sizing: border-box;
+    position: relative;
+    top: -40px;
+    text-align: center;
+}
+
+.weaponstable > div {
+    border: 2px solid #9a191a;
+    box-sizing: border-box;
+}
+
+
+.rulescontainer {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 20% 80%;
+    float: left;
+    position: relative;
+    top: -40px;
+}
+
+.characterlist {
+    list-style: none;
+    padding: 2;    
+}
+
+.equiptmentlist{
+    list-style: none;
+    padding: 2;  
+}
+
+.equipmentwrapper{
+    display: grid;
+    grid-template-columns: 100px 680px;    
+    float:left;
+    height: auto;
+}
+
+.equipmentcolumn1{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px;
+    float: left;  
+}
+
+.spacer{
+    height: 25px;
+}
+
+.equipmentcolumn2{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 300px;
+    float: left;
+}
+
+.equipmentrules{
+    color: #9a191a;
+    font-size: medium;
+    float: left;
+}
+
+.equipmentcost{
+    color: #9a191a;
+    font-size: medium;
+    float: right;
+    height: 20px;
+}
+
+.html2canvas-container {
+    width: 12000px; 
+    height: 12000px !important;
+}
+
+button{
+    color: #9a191a;
+    background-color: darkgrey;
+    border: #9a191a;
+    border-style: groove;
+    padding: 10px;
+    font-size: medium;    
+}
+
+button:hover{
+    background-color: black
+}
+
+button:active{
+    background-color: aliceblue;
+}
+
+@media screen and (max-width:800px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: 250px;    
+        float:left;      
+    
+        
+      }
+
+      .column1 {
+        display: grid;
+        grid-template-columns: 120px 130px;
+        grid-template-rows: auto; 
+        float: left;
+        padding:5px;
+    }
+
+      .charimage{
+          height:120px;
+          width:120px;
+      }
+
+      .charimagespace .costsection {
+        position: relative;
+        top: -38px;
+        left: 90px;
+        width: 10px;
+        font-size: large;
+        color: whitesmoke;
+    }
+    
+.keywordsection {
+    font-style: italic;
+}
+
+    .keywords{               
+        padding: 0;
+        list-style-type: disc;
+    }
+    
+    .keywords .text {
+        color: black;
+        font-size: xx-small;
+    }
+
+    .keywords .li{    
+    list-style: disc;
+    }
+
+    .tableheader {
+        color: white;
+        background-color: #9a191a;
+        border-bottom-style: solid;
+        border-width: 1px;
+        padding: 1px;
+        font-family: buckingham;
+        font-size: xx-small;
+    }
+
+    .statstable {
+        display: grid;
+        grid-template-columns: 35px 35px 35px 35px 35px;
+        grid-template-rows: 50% 50%;
+        float: left;
+        grid-column-gap: 2px;
+        text-align: center;
+        border:10px #9a191a;
+        border-style: double;
+        font-size: small
+    }
+
+    .attimg{
+        height:30px;
+        width: 30px;
+    }
+
+    .attributestable {
+        display: grid;
+        grid-template-columns: 40px 40px 40px 40px;
+        float: left;
+        grid-column-gap: 2px;
+        text-align: center;
+        color: white;
+        border: 10px;
+        border-color: #9a191a;
+        border-style: double;
+    }
+    
+    .attributestable .text{
+        display: none;
+    }   
+    
+    .actionatt {
+     position: relative;
+    top: -30px;
+    }
+    
+    .lifeatt {
+        position: relative;
+    top: -30px;
+        }
+    .willatt {
+        position: relative;
+    top: -30px;
+    }
+    
+    .commandatt {
+        position: relative;
+    top: -30px;
+    }
+
+    .rulesheader{
+        color: white;
+        border: 10px #9a191a;
+        border-style: double;
+        background-color: #9a191a;
+        font-family: buckingham;
+        font-size: small;
+    }
+
+    .rulescontainer {
+        display: grid;
+        grid-template-columns: 220px;
+        grid-template-rows: 100%;
+        float: left;
+    }
+
+    .specialrulescontainer{
+        height: auto;
+    }
+
+    .specialrules{
+        list-style-type: disc;
+        padding: 5px;
+        Width: 130px;
+        height: auto;
+        
+    }
+    
+    .specialrules .text {
+        color: white;
+        font-size: x-small;
+        
+    }
+    
+    .specialrules li {
+        color: white;
+        list-style: disc
+    }
+
+    .uniquerules{
+        list-style-type: none;
+        padding: 0;        
+        padding: 5px;        
+    }
+    
+    .whiteheader{
+        color: #9a191a;
+        font-family: buckingham;
+    }
+    
+    .uniquerules .text {
+        color: #9a191a;
+        font-size: x-small;
+    }
+    
+
+    .weaponstable {
+        display: grid;
+        grid-template-columns: 55px 24px 24px 24px 24px 90px;
+        grid-template-rows: 20px auto;
+        float: left;
+        grid-column-gap: 0px;
+        border: none;
+        box-sizing: border-box;
+        font-size: xx-small;
+        text-align: center
+    }
+    
+    .weaponstable > div {
+        border: 2px solid #9a191a;
+        box-sizing: border-box;
+        text-align: center;
+        
+    }
+    
+    .weaponnames{
+        list-style-type: none;
+        padding: 0;    
+    }
+    
+    .weaponnames .text{
+        color: #9a191a;
+        font-size: 4pt;    
+    }
+    
+    .weaponranges{
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .weaponranges .text{
+        color: #9a191a;
+        font-size: xx-small;
+        text-align: center;
+    }
+    
+    .weaponevade{
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .weaponevade .text{
+        color: #9a191a;
+        font-size: xx-small;
+        text-align: center;
+    }
+    
+    .weapondamage{
+        list-style-type: none;
+        
+    }
+    
+    .weapondamage .text{
+        color: #9a191a;
+        font-size: xx-small;
+        text-align: center;
+        
+    }
+    
+    .weaponpenetration{
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .weaponpenetration .text{
+        color: #9a191a;
+        font-size: xx-small;
+        text-align: center;
+    }
+    
+    .weaponabilities{
+        list-style-type: none;
+        padding:0px;
+    }
+    
+    .weaponabilities li{
+        display: inline-block;
+        
+    }
+    
+    .weaponabilities .text{
+        color: #9a191a;
+        font-size: 4pt;
+        float: left;
+        text-align: left;
+        
+    }
+
+    .commandimg{
+        width: 250px;
+         height:100px;
+    }
+
+    .html2canvas-container {
+        width: 12000px; 
+        height: 12000px !important;
+    }
+
+    .baseandcostwrapper {
+        display: grid;
+        grid-template-columns: 30px;;
+        float: left;
+    }
+    
+    .basesection {
+        color: #9a191a;
+        }
+        
+        .basesection .text{
+            position: relative;
+            top: -250px;
+            right: -60px;
+        }
+        
+        .baseimage{
+            height: 40px;
+            width: 40px;
+            position: relative;
+            top: -215px;
+            right: -50px;
+        }
+    
+        .equiptmentlist{
+            list-style: none;
+            padding: 2;  
+        }
+        
+        .equipmentwrapper{
+            display: grid;
+            grid-template-columns: 100px 150px;    
+            float:left;
+            height: auto;
+        }
+        
+        .equipmentcolumn1{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 150px;
+            float: left;  
+        }
+        
+        .spacer{
+            height: 25px;
+        }
+        
+        .equipmentcolumn2{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 300px;
+            float: left;
+        }
+        
+        .equipmentrules{
+            color: #9a191a;
+            font-size: medium;
+            float: left;
+        }
+        
+        .equipmentcost{
+            color: #9a191a;
+            font-size: medium;
+            float: right;
+            height: 20px;
+        }
+        
+}
+
+    
+
+

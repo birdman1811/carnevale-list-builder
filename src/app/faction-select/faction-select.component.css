@@ -1,0 +1,175 @@
+/*Create 7 columns, equal, float next to eachother*/
+.column {
+    float: left;
+    padding: 10px;
+  }  
+
+  /*faction list Select Style*/
+  .factions {
+    list-style-type: none;
+    padding: 0;  
+    width: 100%;
+  }
+
+  .factionicon{
+    width: 100px;
+    height: 100px;
+  }
+
+  h1{
+    width:auto;
+  }
+  
+  .factionname{
+    color: #9a191a;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Buckingham;
+  }
+  
+  .factions .factionbadge{
+    float: left;
+    width: 100;
+    text-align: center;     
+    font-style: oblique;
+    font-size: large;    
+    padding: 4%; 
+    height: 100px;
+    width: 100px;
+    
+  }       
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;    
+}  
+
+.strip{
+  width: 450;
+  height: 800;
+  padding: 100;
+  text-align: center;
+}
+
+.factionimage{
+  color: #13100d
+}
+
+.factionimg{
+  height: 700px;
+}
+
+.stipimage{
+  height: 500px;
+  width: 450px;
+}
+  
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;    
+    height: 100vh;
+    float:left;
+    
+       
+  }
+   
+  .paper {
+    background-image: url("/assets/images/Paper.png");
+    color: #13100d;
+    text-align: center;
+    padding-bottom: 10px;
+    height: 700px;
+  }
+
+ button {
+   
+   background-image: url("../../assets/images/buttons/Forward.png");
+   height: 110px;  
+   width: 140px;
+ } 
+
+ button:hover {
+   background-color: #eae3d2;
+   border-style: ridge;
+ }
+
+ .btnimg{
+   height: 100px;
+   width: 100px;
+ }
+
+ @media screen and (max-width:900px){
+  .factionicon{
+    width: 80px;
+    height: 80px;
+  }
+
+   }
+
+   @media screen and (max-width:800px){
+    .factionicon{
+      width: 70px;
+      height: 70px;
+    }
+  
+     }
+
+     @media screen and (max-width:700px){
+      .factionicon{
+        width: 60px;
+        height: 60px;
+      }
+    
+       }
+  
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px){
+  .wrapper, .paper, .factionimage, .factions .factionbadge, .factions .factionbadge, .factions .factionbadge, {
+    width :100%;      
+  }
+  
+  .wrapper{
+    display:grid;
+    grid-template-columns: 100px 100px  ;
+    grid-template-rows:  auto ;
+  }
+  h1{
+    font-size: larger
+  }
+  .strip{
+    display: none;
+  }
+
+  .factionicon{
+    height: 50px;
+    width: 50px
+  }
+
+  .paper{
+    width:120px;
+    height: auto;
+    font-size: xx-small;
+    float: right;
+  }
+
+  .factionimg{
+    height: 110px;
+  }
+
+  button{
+    height:50px;
+    width: 50px
+  }
+
+  .btnimg{
+    height: 25px;
+    width: 25px;
+  }
+
+  .factionname{
+    font-size: medium;
+  }
+}

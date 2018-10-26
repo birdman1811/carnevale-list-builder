@@ -1,0 +1,21 @@
+p{    
+    color: #9a191a;
+    font-size: large;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px){
+    p{
+        font-size: small;
+    }
+
+    h1{
+        font-size: medium;
+    }
+  }
+
+  .textheading{
+      text-align: center;
+      font-size: x-large;
+      color: #9a191a;
+  }

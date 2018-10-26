@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>{{data.equipment.equipment}}</h1>
+<mat-dialog-content>
+  <div class = "container">
+    <div class = "wrapper">      
+        <div class = "column1">
+          <div><img src = "{{data.equipment.icon}}" height = "100" width = "100"></div>
+        </div>
+      
+      <div class = "column2">
+
+        <div class = "equipmentrules">
+          {{data.equipment.equipmentText}}
+        </div>
+
+        <div class  = "equipmentcost">
+          Cost: {{data.equipment.equipmentCost}} ducats
+        </div>
+
+      </div>
+
+      </div>            
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="true">Add</button>
+  <button mat-button [mat-dialog-close]>Close</button>
+      
+</mat-dialog-actions>

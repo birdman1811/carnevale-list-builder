@@ -1,0 +1,138 @@
+
+   
+    <mat-dialog-content>      
+      <div class = "wrapper">
+        <div><div class = "column1">
+          <div class = "charimagespace"><img class = "charimage" src = "{{data.character.imageUrl}}">
+            <div class ="costsection">{{data.character.ducats}}</div></div>
+          
+            <div class = "baseandcostwrapper">
+                <div class ="basesection"><img class = "baseimage" src = "../../assets/images/SizeGrey.png">
+                    <div class = "text">{{data.character.baseSize}}</div></div></div>
+                
+                        
+          
+          <div><div class = "keywordsection">
+              <ul class ="keywords">
+                <li *ngFor="let keyword of data.character.keywords">
+                    <div class  = text>{{keyword.keyword}},</div>
+                </li>
+              </ul>
+        </div></div>
+        </div></div>
+        <div><div class = "column2">
+            <div><div class = "statsattsweaponscontainer">
+                <div><div class = "statsattribcontainer">
+                    <div><div class ="statstable">
+                        <div><div class = "tableheader">  MOV </div></div> 
+                        <div><div class = "tableheader">  DEX </div></div> 
+                        <div><div class = "tableheader">  ATT </div></div> 
+                        <div><div class = "tableheader">  PRO </div></div> 
+                        <div><div class = "tableheader">  MIND </div></div> 
+                        <div>{{data.character.movement}}</div> 
+                        <div>{{data.character.dexterity}}</div> 
+                        <div>{{data.character.attack}}</div> 
+                        <div>{{data.character.protection}}</div> 
+                        <div>{{data.character.mind}}</div>                         
+                    </div></div> 
+                    <div><div class = "attributestable">
+                        <div> <img class = "attimg" src = "../../assets/images/ActionPoints .png">
+                          <div class = "actionatt">{{data.character.actionpoints}}</div>                          
+                          <div class = "text">Action Points</div>
+                        </div>
+                        <div> <img class = "attimg" src = "../../assets/images/LifePoints.png">
+                        <div class = "lifeatt">{{data.character.lifepoints}}</div>
+                        <div class = "text">Life Points</div></div>
+                        
+                        <div><img class = "attimg" src = "../../assets/images/WillPoints.png">
+                        <div class = "willatt">{{data.character.willpoints}}</div>
+                        <div class = "text">Will Points</div></div>
+                        
+                        <div> <img class = "attimg" src = "../../assets/images/CommandPoints.png">
+                        <div class = "commandatt">{{data.character.commandpoints}}</div>
+                        <div class  = "text">Command Points</div></div>
+                        
+                    </div> </div>
+                </div></div> 
+                
+            </div></div>
+            <div><div class = "rulescontainer">
+               <div><div class ="rulesheader"> Special Rules: 
+                   <ul class ="specialrules">
+                       <li *ngFor="let specialrule of data.character.specialrules">
+                           <span class = text>{{specialrule.rule}}({{specialrule.amount}}), </span>
+                       </li>
+                   </ul>
+               </div></div>  
+               <div>
+                   <ul class = "uniquerules"> 
+                        <div class = "whiteheader">Unique Rules:</div>                   
+                       <li *ngFor="let uniquerule of data.character.uniqueRules">
+                           <span class = text>{{uniquerule.uniqueRuleText}}</span>
+                       </li>
+                   </ul>
+               </div>  
+            </div></div>
+            <div><div class = "weaponstable">
+                <div><div class ="tableheader"> Weapon</div></div>
+                <div><div class ="tableheader"> RNG</div></div>
+                <div><div class ="tableheader"> EVD</div></div>
+                <div><div class ="tableheader"> DMG</div></div>
+                <div><div class ="tableheader"> PEN</div></div>
+                <div><div class ="tableheader"> Abilities</div></div>
+                <div>
+                    <p></p>
+                    <ul class = "weaponnames">
+                        <li *ngFor="let weapon of data.character.weapons">
+                            <span class = text>   {{weapon.weapon}}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class = "weaponranges">
+                        <li *ngFor="let weapon of data.character.weapons">
+                            <span class = text>  {{weapon.weaponRange}}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class = "weaponevade">
+                        <li *ngFor="let weapon of data.character.weapons">
+                            <span class = text>{{weapon.evasion}}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class = "weapondamage">
+                        <li *ngFor="let weapon of data.character.weapons">
+                            <span class = text>{{weapon.damage}}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class = "weaponpenetration">
+                        <li *ngFor="let weapon of data.character.weapons">
+                            <span class = text>{{weapon.penetration}}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class = "weaponabilities">
+                        <ul *ngFor="let weapon of data.character.weapons">
+                            <li *ngFor="let weaponAbility of weapon.weaponAbilities">
+                                <div class = text>{{weaponAbility.weaponAbility}},</div>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div></div> 
+        </div></div>
+    </div>
+      
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button mat-button [mat-dialog-close]="true"><img src="../../assets/images/buttons/Add Character.png" height = "50" width = "50"></button>
+      <button mat-button [mat-dialog-close]><img src="../../assets/images/buttons/Close Window.png" height = "50" width = "50"></button>
+           
+    </mat-dialog-actions>
+ 

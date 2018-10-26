@@ -1,0 +1,79 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Application-wide Styles */
+@font-face{
+    font-family: buckingham;
+    src :url(assets/BuckinghamRegular.ttf) format("opentype");
+}
+
+@font-face{
+  font-family: ACaslonPro;
+  src :url(assets/ACaslonPro-Regular.otf) format("opentype");
+}
+
+.charactersheetbox > mat-dialog-container {
+  background-color: #13100d;
+  background-image: url("/assets/images/gatepattern.png");
+  padding: 24px;
+}
+
+.backdropcustom {
+  background-color: #13100d;  
+}
+
+h1 {
+    font-size: 350%;
+    color: #9a191a;
+    font-family: buckingham;
+    text-align: center;
+  }
+    h2, h3 {
+    color: #9a191a;
+    font-family: AcaslonPro;    
+    text-align: left;
+  }
+  body {
+    margin: 2em;
+    background-color: #13100d;
+    background-image: url("assets/images/gatepattern.png");
+  }
+  body, input[text], button {
+    color: #888;
+    font-family: AcaslonPro;
+  }
+  /* everywhere else */
+  * {
+    font-family: AcaslonPro;
+  }
+
+  /*Header Style*/
+  .header {
+    
+    text-align: center;
+  }
+
+  @media screen and (max-width:600px){
+
+  .charactersheetbox > mat-dialog-container {
+    background-color: #13100d;
+    background-image: url("/assets/images/gatepattern.png");
+    padding: 0px;
+  }
+}
+  
+
+ 
+  
+
+ 
+
+
+
+
+
+
+
+
+
+  
+

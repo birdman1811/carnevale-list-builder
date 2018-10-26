@@ -1,0 +1,27 @@
+
+<ul class="factions">
+  <li *ngFor="let faction of factions" (click)="onSelect(faction)">
+    <span class="factionbadge"><img class = "factionicon" src="{{faction.reverseicon}}" ></span>
+    </li>
+</ul>
+<br>
+<p></p>
+<h1>Select Faction</h1>
+
+<!--Very simple page really, above loads the faction badges, below is the screen that appears when one is selected.-->
+ <div *ngIf="selectedFaction">
+  <div class="wrapper">
+    <div class = strip><img class = "stripimage" src="{{selectedFaction.strip}}" height = "450" width = "400"></div>
+    <div class = "factionimage"><img class = "factionimg" src="{{selectedFaction.factionImgUrl}}"></div>
+    <div><div class="paper"><div class = "factionname">{{selectedFaction.faction}}</div>
+      <p>{{selectedFaction.factionLore}}</p>
+      <p>{{selectedFaction.factionGameplay}}</p>      
+      <a routerLink="/builder/{{selectedFaction.factionId}}">
+        <button><img class = "btnimg" src ="../../assets/images/buttons/Forward.png" ></button></a>
+      </div>
+  </div>
+    <div class = strip><img class = "stripimage" src="{{selectedFaction.strip}}"height ="450" width = "400"></div>
+  </div>
+      </div>
+ 
+  
