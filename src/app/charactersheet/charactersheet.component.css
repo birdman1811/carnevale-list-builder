@@ -220,23 +220,26 @@ color: #9a191a;
 .weaponstable > div {
     border: 2px solid #9a191a;
     box-sizing: border-box;
-    text-align: center;
+    
     
 }
 
 .weaponnames{
     list-style-type: none;
-    padding: 0;    
+    padding: 0; 
+    text-align: center;   
 }
 
 .weaponnames .text{
     color: #9a191a;
-    font-size: small;    
+    font-size: small; 
+    text-align: center;   
 }
 
 .weaponranges{
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 .weaponranges .text{
@@ -248,6 +251,7 @@ color: #9a191a;
 .weaponevade{
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 .weaponevade .text{
@@ -259,6 +263,7 @@ color: #9a191a;
 .weapondamage{
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 .weapondamage .text{
@@ -270,6 +275,7 @@ color: #9a191a;
 .weaponpenetration{
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 .weaponpenetration .text{
@@ -281,6 +287,7 @@ color: #9a191a;
 .weaponabilities{
     list-style-type: none;
     padding: 0;
+    text-align: left;
 }
 
 .weaponabilities li{
@@ -291,6 +298,7 @@ color: #9a191a;
     color: #9a191a;
     font-size: small;
     float: left;
+    text-align: left;
 }
 
 
@@ -503,13 +511,14 @@ button:active{
     .weaponstable > div {
         border: 2px solid #9a191a;
         box-sizing: border-box;
-        text-align: center;
+        
         
     }
     
     .weaponnames{
         list-style-type: none;
-        padding: 0;    
+        padding: 0; 
+        text-align: center;   
     }
     
     .weaponnames .text{
@@ -520,6 +529,7 @@ button:active{
     .weaponranges{
         list-style-type: none;
         padding: 0;
+        text-align: center;
     }
     
     .weaponranges .text{
@@ -531,6 +541,7 @@ button:active{
     .weaponevade{
         list-style-type: none;
         padding: 0;
+        text-align: center;
     }
     
     .weaponevade .text{
@@ -541,6 +552,7 @@ button:active{
     
     .weapondamage{
         list-style-type: none;
+        text-align: center;
         
     }
     
@@ -554,6 +566,7 @@ button:active{
     .weaponpenetration{
         list-style-type: none;
         padding: 0;
+        text-align: center;
     }
     
     .weaponpenetration .text{
@@ -565,10 +578,12 @@ button:active{
     .weaponabilities{
         list-style-type: none;
         padding:0px;
+        text-align: left;
     }
     
     .weaponabilities li{
         display: inline-block;
+        text-align: left;
         
     }
     
