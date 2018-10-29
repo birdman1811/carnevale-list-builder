@@ -409,7 +409,7 @@ button:active{
         float: left;
         grid-column-gap: 2px;
         text-align: center;
-        color: white;
+        color: black;
         border: 10px;
         border-color: #9a191a;
         border-style: double;
