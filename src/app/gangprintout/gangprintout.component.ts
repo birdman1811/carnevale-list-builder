@@ -37,7 +37,7 @@ at it's basic premise, it takes a snapshot of the viewport, which is moved down
 to then take another snapshot, this is then printed onto a PDF. This means there is a
 break where the PDF pages break and currently it is impossible to fix. For higher quality scale
 can be increased, however size of document doubles with each increment of 1. At scale of 2 this creates a document of about 50MB
-any higher and it becomes very unwieldy to download*/
+any higher and it becomes very large and not suitable to download*/
 
 public printPDF(){  
 
