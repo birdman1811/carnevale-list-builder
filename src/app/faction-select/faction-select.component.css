@@ -75,12 +75,13 @@
        
   }
    
-  .paper {
-    background-image: url("/assets/images/Paper.png");
+  .paper {    
+    background-image: url("../../assets/images/Paper.png");
     color: #13100d;
     text-align: center;
-    padding-bottom: 10px;
-    height: 700px;
+    padding: 10px;
+    min-height: 700px;
+    
   }
 
  button {      

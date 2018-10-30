@@ -37,7 +37,8 @@
     height: 80%;     
     background-color: #13100d;
     padding-bottom: 10px;
-    
+    padding-right: 10px;
+    padding-left: 5px;
   }
 
   .summary .ducats {
@@ -156,6 +157,8 @@
   .equipment .equipmentframe .equipmentimage{    
     width: 200;
     text-align: center;
+    position: relative;
+    left: 10px;
   }
 
   .equipment .equipmentframe .equipmentimage:hover{
@@ -246,7 +249,7 @@
     width:100%;
     background-color: #13100d;
     text-align: center;
-    
+    padding:20px;
   }
 
   /*Create 7 columns, equal, float next to eachother*/
