@@ -9,7 +9,7 @@
     
 
 .mat-dialog-actions{
-    padding-left: 10px;
+    padding-left: 0
 }
 
 .keywords{
@@ -101,6 +101,7 @@ color: #9a191a;
     position: relative;
     top: -35px;
     right: -10px;
+    font-size: large
 }
 
 .baseimage{
@@ -157,6 +158,7 @@ color: #9a191a;
     text-align: center;
     border:10px #9a191a;
     border-style: double;
+    font-size: large;
 }
 
 .attributestable {
@@ -169,6 +171,7 @@ color: #9a191a;
     border: 10px;
     border-color: #9a191a;
     border-style: double;
+    font-size: large;
     
 }
 
@@ -188,21 +191,24 @@ color: #9a191a;
 .actionatt {
     position: relative;
     top: -40px;
-    
+    font-size: larger;
 }
 
 .lifeatt {
     position: relative;
     top: -40px;
+    font-size: larger;
     }
 .willatt {
     position: relative;
     top: -40px;
+    font-size: larger;
 }
 
 .commandatt {
     position: relative;
     top: -40px;
+    font-size: larger;
 }
 
 
