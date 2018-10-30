@@ -179,6 +179,7 @@
         position: relative;
         top: -35px;
         right: -10px;
+        font-size: larger;
     }
     
     .baseimage{
@@ -222,6 +223,7 @@
     float: left;
     grid-column-gap: 2px;
     text-align: center;
+    font-size: larger;
 }
 
 .attributestable {
@@ -243,25 +245,31 @@
 
 .attributestable .text{
     color: #9a191a;
+    position: relative;
+    top: -30px;
 }
 
 .actionatt {
     position: relative;
     top: -40px;
+    font-size: larger;
 }
 
 .lifeatt {
     position: relative;
     top: -40px;
+    font-size: larger;
     }
 .willatt {
     position: relative;
     top: -40px;
+    font-size: larger;
 }
 
 .commandatt {
     position: relative;
     top: -40px;
+    font-size: larger;
 }
 
 .weaponstableheader{

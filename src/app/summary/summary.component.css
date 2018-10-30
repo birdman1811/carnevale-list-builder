@@ -38,6 +38,8 @@ p{
 
 .delete{
     padding:2px;
+    border: none;
+    background-color: #13100d;
 }
 .deletechar{
     height:15px;
