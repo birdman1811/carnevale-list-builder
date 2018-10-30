@@ -8,7 +8,7 @@
   <div class = "classheader">Leader:</div>
   <ul class = "equipmentlist">
     <li *ngFor="let character of gang.leaders">
-        <span class = "charname"> <img class = "factionicon" src = "{{character.factionIcon}}" > {{character.name}}:</span><span class = "costlabel"> Cost: {{character.ducats}} 
+        <span class = "charname"> <img class = "factionicon" src = "{{character.factionIcon}}" > {{character.name}}</span><span class = "costlabel"> Cost: {{character.ducats}} 
       <button class="delete" title="Delete Character"
       (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button> </span>
     </li>
@@ -17,7 +17,7 @@
   <div class = "classheader">Heroes:</div>
   <ul class = "equipmentlist">
     <li *ngFor="let character of gang.heroes">
-        <span class = "charname"> <img class = "factionicon" src = "{{character.factionIcon}}" height = "20" width = "20"> {{character.name}}:</span><span class =  "costlabel"> Cost: {{character.ducats}}
+        <span class = "charname"> <img class = "factionicon" src = "{{character.factionIcon}}" height = "20" width = "20"> {{character.name}}</span><span class =  "costlabel"> Cost: {{character.ducats}}
       <button class="delete" title="Delete Character"
       (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button></span> 
     </li>
@@ -26,7 +26,7 @@
   <div class = "classheader">Henchmen:</div>
   <ul class = "equipmentlist">
     <li *ngFor="let character of gang.henchmen">
-        <span class = "charname">  <img class = "factionicon" src = "{{character.factionIcon}}" height = "20" width = "20"> {{character.name}}:</span><span class = "costlabel"> Cost: {{character.ducats}}
+        <span class = "charname">  <img class = "factionicon" src = "{{character.factionIcon}}" height = "20" width = "20"> {{character.name}}</span><span class = "costlabel"> Cost: {{character.ducats}}
         <button class="delete" title="Delete Character"
         (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button></span> 
     </li>
