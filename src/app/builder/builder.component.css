@@ -153,9 +153,9 @@
     font-size: larger
   }
 
-  .equipment .equipmentframe .equipmentimage{
-    float: left;
+  .equipment .equipmentframe .equipmentimage{    
     width: 200;
+    text-align: center;
   }
 
   .equipment .equipmentframe .equipmentimage:hover{

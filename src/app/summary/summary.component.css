@@ -154,7 +154,11 @@ width: 30px;
 } 
 
 .buttonarea{
-    text-align: center;
+    text-align: right;
+}
+
+.legalface{
+    text-align: right;
 }
 
 

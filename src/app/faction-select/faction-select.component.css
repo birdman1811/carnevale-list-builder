@@ -83,11 +83,10 @@
     height: 700px;
   }
 
- button {
-   
-   background-image: url("../../assets/images/buttons/Forward.png");
+ button {      
    height: 110px;  
    width: 140px;
+   background-color: grey;
  } 
 
  button:hover {
