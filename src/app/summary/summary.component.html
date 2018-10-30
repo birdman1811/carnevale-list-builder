@@ -8,36 +8,36 @@
   <div class = "classheader">Leader:</div>
   <ul class = "equipmentlist">
     <li *ngFor="let character of gang.leaders">
-        <img src = "{{character.factionIcon}}" height = "20" width = "20"><span class = "charname"> {{character.name}}:</span><span class = "costlabel"> Cost: {{character.ducats}} </span>
+        <span class = "charname"> <img class = "factionicon" src = "{{character.factionIcon}}" > {{character.name}}:</span><span class = "costlabel"> Cost: {{character.ducats}} 
       <button class="delete" title="Delete Character"
-      (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button>
+      (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button> </span>
     </li>
   </ul>
 
   <div class = "classheader">Heroes:</div>
   <ul class = "equipmentlist">
     <li *ngFor="let character of gang.heroes">
-        <img src = "{{character.factionIcon}}" height = "20" width = "20"><span class = "charname"> {{character.name}}:</span><span class =  "costlabel"> Cost: {{character.ducats}}</span> 
+        <span class = "charname"> <img class = "factionicon" src = "{{character.factionIcon}}" height = "20" width = "20"> {{character.name}}:</span><span class =  "costlabel"> Cost: {{character.ducats}}
       <button class="delete" title="Delete Character"
-      (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button>
+      (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button></span> 
     </li>
   </ul>
 
   <div class = "classheader">Henchmen:</div>
   <ul class = "equipmentlist">
     <li *ngFor="let character of gang.henchmen">
-        <img src = "{{character.factionIcon}}" height = "20" width = "20"><span class = "charname"> {{character.name}}:</span><span class = "costlabel"> Cost: {{character.ducats}}</span> 
+        <span class = "charname">  <img class = "factionicon" src = "{{character.factionIcon}}" height = "20" width = "20"> {{character.name}}:</span><span class = "costlabel"> Cost: {{character.ducats}}
         <button class="delete" title="Delete Character"
-        (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button>
+        (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button></span> 
     </li>
   </ul>
 
 
   <ul class = "equipmentlist">
     <li *ngFor="let item of gang.equipment">
-      <span class = text>Item: {{item.equipment}}: Cost: {{item.equipmentCost}}:</span>
+      <span class = text>Item: {{item.equipment}}: Cost: {{item.equipmentCost}}:
       <button class="delete" title="Delete Character"
-      (click)="deleteequipment(item)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"></button>
+      (click)="deleteequipment(item)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"></button></span>
     </li>
   </ul>
 

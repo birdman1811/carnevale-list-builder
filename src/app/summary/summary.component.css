@@ -49,13 +49,13 @@ p{
 .charname{
     color: whitesmoke;
     text-align: left;
+
 }
 
 .costlabel{
     color: whitesmoke;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    text-align: right;    
+    float: right;
 }
 
 .deletebuttonspan{
@@ -163,6 +163,11 @@ width: 30px;
     text-align: right;
 }
 
+.factionicon{
+    height: 20px;
+    width: 20px;
+}
+
 
 
 @media screen and (max-width:800px){
@@ -170,13 +175,23 @@ width: 30px;
 .charname{
     color: whitesmoke;
     text-align: left;
+    float: left;
+    font-size: 10pt;
+    padding-bottom: 2px;
 }
 
 .costlabel{
     color: whitesmoke;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    font-size: 10pt;
+    float: right;
+    padding-bottom: 2px;
+    
+}
+
+.factionicon{
+    height: 10px;
+    width: 10px;
+    padding-bottom: 2px;
 }
 
 .print {
