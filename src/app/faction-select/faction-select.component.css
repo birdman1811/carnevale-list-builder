@@ -76,11 +76,18 @@
   }
    
   .paper {    
-    background-image: url("../../assets/images/Paper.png");
+    /*background-image: url("../../assets/images/Paper.png");*/
+    border-image-slice: 27 27 27 27;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("http://www.webapp.carnevalegame.com/assets/images/Paper.png");
     color: #13100d;
     text-align: center;
-    padding: 10px;
-    min-height: 700px;
+    padding: 20px;
+    min-height: 670px;
+    background:#eeeeeee0;
+    background-clip: content-box;
     
   }
 
@@ -133,7 +140,7 @@
   
   .wrapper{
     display:grid;
-    grid-template-columns: 100px 100px  ;
+    grid-template-columns: 50% 50% ;
     grid-template-rows:  auto ;
   }
   h1{
@@ -149,7 +156,7 @@
   }
 
   .paper{
-    width:120px;
+    
     height: auto;
     font-size: xx-small;
     float: right;
