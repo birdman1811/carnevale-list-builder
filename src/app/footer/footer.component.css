@@ -56,12 +56,15 @@ body{
 
 .ttcombatimg{
     height: 100px;
-    position: relative;
-    left: -510px;
+    
 }
 
 .ttcombatdice{
     height: 30px;
+}
+
+.ttcombatsign{
+    float:left;
 }
 
 @media screen and (max-width:700px){
