@@ -35,7 +35,7 @@
 
   <ul class = "equipmentlist">
     <li *ngFor="let item of gang.equipment">
-      <span class = text>Item: {{item.equipment}}: Cost: {{item.equipmentCost}}:
+      <span class = text>Item: {{item.equipment}}:</span><span class = "costlabel"> Cost: {{item.equipmentCost}}:
       <button class="delete" title="Delete Character"
       (click)="deleteequipment(item)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"></button></span>
     </li>
