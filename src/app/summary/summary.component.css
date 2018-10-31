@@ -23,6 +23,8 @@ p{
     list-style-type: disc;
     padding: 2;
     text-align: left;
+    -ms-flex: 25%; /* IE10 */
+  flex: 25%;
 }
 
 .equipmentlist .text{
@@ -236,4 +238,13 @@ width: 30px;
 .deletechar{
     height:10px;
     width: 10px;
+}
+
+.equipmentlist {
+    list-style-type: disc;
+    padding: 2;
+    text-align: left;
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    margin-bottom:20px;
 }
