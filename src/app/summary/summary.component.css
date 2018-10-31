@@ -186,6 +186,7 @@ width: 30px;
     font-size: 10pt;
     float: right;
     padding-bottom: 2px;
+    text-align: right;
     
 }
 
@@ -224,4 +225,15 @@ width: 30px;
     height: 30px;
     width: 30px;    
         }
+}
+
+.characterlist {
+    list-style-type: disc;
+    
+    text-align: left;
+}
+
+.deletechar{
+    height:10px;
+    width: 10px;
 }
