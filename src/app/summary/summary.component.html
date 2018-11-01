@@ -10,7 +10,7 @@
     <li *ngFor="let character of gang.leaders">
         <p><span class = "charname"> <img class = "factionicon" src = "{{character.factionIcon}}" > {{character.name}}</span><span class = "costlabel"> Cost: {{character.ducats}} 
       <button class="delete" title="Delete Character"
-      (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button> </span></p>
+      (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button> </span></p><br>
     </li>
   </ul>
 
@@ -19,7 +19,7 @@
     <li *ngFor="let character of gang.heroes">
         <p><span class = "charname"> <img class = "factionicon" src = "{{character.factionIcon}}" > {{character.name}}</span><span class =  "costlabel"> Cost: {{character.ducats}}
       <button class="delete" title="Delete Character"
-      (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button></span> </p>
+      (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button></span> </p><br>
     </li>
   </ul>
 
@@ -28,16 +28,16 @@
     <li *ngFor="let character of gang.henchmen">
         <p><span class = "charname">  <img class = "factionicon" src = "{{character.factionIcon}}" > {{character.name}}</span><span class = "costlabel"> Cost: {{character.ducats}}
         <button class="delete" title="Delete Character"
-        (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button></span></p> 
+        (click)="delete(character)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"> </button></span></p> <br>
     </li>
   </ul>
 
 
   <ul class = "equipmentlist">
     <li *ngFor="let item of gang.equipment">
-      <span class = text>Item: {{item.equipment}}:</span><span class = "costlabel"> Cost: {{item.equipmentCost}}:
+      <p><span class = text>Item: {{item.equipment}}:</span><span class = "costlabel"> Cost: {{item.equipmentCost}}:
       <button class="delete" title="Delete Character"
-      (click)="deleteequipment(item)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"></button></span>
+      (click)="deleteequipment(item)"><img class = "deletechar" src = "../../assets/images/buttons/Close Window.png"></button></span></p><br>
     </li>
   </ul>
 
