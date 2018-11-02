@@ -17,6 +17,7 @@ command: string;
 leaders: CompleteCharacter[];
 heroes: CompleteCharacter[];
 henchmen: CompleteCharacter[];
+gondolieres: number;
 face: string = '../../assets/images/Happy_Face.png'
   
 
@@ -26,7 +27,7 @@ constructor() {
     this.leaders = [];
     this.heroes = [];
     this.henchmen =[];
-    
+    this.gondolieres = 0;
 }
 
 addCharacter(char: CompleteCharacter){
@@ -107,6 +108,7 @@ finderror() {
     var otherfactionchars: number = 0;
     var fateused: number = 0;
     var justiceused: number = 0;
+    this.gondolieres = 0;
     
 for(let character of this.characters){
     if (character.charType == "Leader"){
@@ -130,6 +132,10 @@ for(let character of this.characters){
 
     if (character.name == "Justice"){
         justiceused = justiceused +1;
+    }
+
+    if (character.name == "Gondolier"){
+        this.gondolieres = this.gondolieres +1;        
     }
 
     var checkresult: boolean = false;
@@ -250,20 +256,50 @@ var isacceptable: boolean = true;
 for (let item of this.equipment){
     var isduplicated: boolean = this.checkDuplicatedItem(item);
     if (isduplicated == true){
+        if (item.equipment == "Gondola"){
+            var extragondolas: boolean = false;
+            extragondolas = this.checkgondolas();
+        }
+        else {
         var duplicateitemerror = new Error("You can only use one "+item.equipment+": ");
         
         var duplicateerror: boolean = false;
         duplicateerror = this.checkduplicateerrorcode(duplicateitemerror.error);
-        if (duplicateerror == false){
+            if (duplicateerror == false){
             this.isAcceptable = false;
             this.errorreason.push(duplicateitemerror);
-        }
+            }
+      }
         
     }
 
 }
 
 return isacceptable;
+}
+
+checkgondolas(): boolean{
+var toomanygondolas: boolean = false;
+var gondolas: number = 0;
+var gondolasallowed: number = this.gondolieres +1;
+for (let item of this.equipment){
+    if (item.equipment == "Gondola"){
+        gondolas = gondolas +1;
+    }
+}
+if(gondolas > gondolasallowed){
+    var duplicateitemerror = new Error("You have too many Gondolers");
+        
+        var duplicateerror: boolean = false;
+        duplicateerror = this.checkduplicateerrorcode(duplicateitemerror.error);
+            if (duplicateerror == false){
+            this.isAcceptable = false;
+            this.errorreason.push(duplicateitemerror);
+            }
+}
+
+
+return toomanygondolas;
 }
 
 checkDuplicatedItem(checkItem: Equipment): boolean{
@@ -303,7 +339,7 @@ resetgang(): void{
     this.errorreason = [];
     this.isAcceptable = true;
     this.SetFace();
-    
+    this.gondolieres = 0;
 
 }
 
