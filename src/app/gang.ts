@@ -18,6 +18,7 @@ leaders: CompleteCharacter[];
 heroes: CompleteCharacter[];
 henchmen: CompleteCharacter[];
 gondolieres: number;
+bridesOfDracule: number;
 face: string = '../../assets/images/Happy_Face.png'
   
 
@@ -28,6 +29,7 @@ constructor() {
     this.heroes = [];
     this.henchmen =[];
     this.gondolieres = 0;
+    this.bridesOfDracule = 0;
 }
 
 addCharacter(char: CompleteCharacter){
@@ -138,6 +140,10 @@ for(let character of this.characters){
         this.gondolieres = this.gondolieres +1;        
     }
 
+    if (character.name == "Bride of Dracula"){
+        this.bridesOfDracule = this.bridesOfDracule +1;
+    }
+
     var checkresult: boolean = false;
     if (character.isUnique == true){        
         console.log("Checking "+character.name);
@@ -189,6 +195,16 @@ if (heroes > henchmen){
         if (duplicateerror == false){
             this.errorreason.push(toomanyheroes);
         }              
+}
+
+if (this.bridesOfDracule > 3){
+    this.isAcceptable = false;
+    var toomanybrides = new Error("You can have a maximum of 3 Brides of Dracula.");
+    var duplicateerror:boolean = false;
+    duplicateerror = this.checkduplicateerrorcode(toomanybrides.error);
+    if (duplicateerror == false){
+        this.errorreason.push(toomanybrides);
+    }
 }
 
 if (otherfactionchars > 0){
