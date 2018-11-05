@@ -28,6 +28,7 @@ export class CompleteCharacter{
     specialrules: Specialrule[];
     weapons: Weapon[]
     factionIcon: string;
+    
 
 
     constructor(charId, name, charType, ducats, imageUrl, faction, actionpoints, attack, baseSize, commandpoints, dexterity, isUnique, lifepoints, mind, movement, protection, 
@@ -52,6 +53,8 @@ export class CompleteCharacter{
         
     
     }
+
+    
 
     stringofuniquerules(): string{
         var uniquerulesstring: string;

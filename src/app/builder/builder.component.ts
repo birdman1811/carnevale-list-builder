@@ -18,6 +18,7 @@ import { WeaponService} from '../weapon.service';
 import { WeaponinstanceService } from '../weaponinstance.service';
 import { EquipmentService } from '../equipment.service';
 import { EquipmentsheetComponent } from '../equipmentsheet/equipmentsheet.component';
+import { Specialrule } from '../specialrule';
 
 
 @Component({
@@ -225,8 +226,9 @@ export class BuilderComponent implements OnInit {
     
   }
 
+  
 
-  /* Due to API design, to give characters a faction Icon we ahve to hard code them in for now. Look to improve for future.*/
+  /* Due to API design, to give characters a faction Icon we have to hard code them in for now. Look to improve for future.*/
   SetFactionIcon(char: CompleteCharacter){
     if (char.faction == 'The Guild'){
       char.factionIcon = 	"http://www.webapp.carnevalegame.com/carnevale-list-builder/assets/images/factionicons/The%20Guild.png"
