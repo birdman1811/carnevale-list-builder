@@ -60,7 +60,12 @@
                <div><div class ="rulesheader"> Special Rules: 
                    <ul class ="specialrules">
                        <li *ngFor="let specialrule of data.character.specialrules">
+                           <div *ngIf="specialrule.amount >= 0">
                            <span class = text>{{specialrule.rule}}({{specialrule.amount}}),&nbsp; </span>
+                        </div>
+                           <div *ngIf="specialrule.amount == -1">
+                                <span class = text>{{specialrule.rule}},&nbsp; </span>
+                           </div> 
                        </li>
                    </ul>
                </div></div>  
