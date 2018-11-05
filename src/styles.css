@@ -52,7 +52,7 @@ h1 {
     text-align: center;
   }
 
-  @media screen and (max-width:600px){
+  @media screen and (max-width:800px){
 
   .charactersheetbox > mat-dialog-container {
     background-color: #13100d;

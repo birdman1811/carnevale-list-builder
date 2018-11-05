@@ -379,14 +379,22 @@ button:active{
     .wrapper {
         display: grid;
         grid-template-columns: 250px;    
-        float:left;      
-    
-        
+        float:left;        
+      }
+
+      .container{
+          width: 100%;
+          position:relative;
+          left:-40px;
+      }
+
+      .mat-dialog-content{
+          padding:0;
       }
 
       .column1 {
         display: grid;
-        grid-template-columns: 120px 130px;
+        grid-template-columns: 220px;
         grid-template-rows: auto; 
         float: left;
         padding:5px;
@@ -508,6 +516,7 @@ button:active{
 
     .specialrulescontainer{
         height: auto;
+        
     }
 
     .specialrules{
@@ -548,14 +557,16 @@ button:active{
 
     .weaponstable {
         display: grid;
-        grid-template-columns: 55px 24px 24px 24px 24px 90px;
+        grid-template-columns: 55px 24px 24px 24px 24px 115px;
         grid-template-rows: 20px auto;
         float: left;
         grid-column-gap: 0px;
         border: none;
         box-sizing: border-box;
         font-size: xx-small;
-        text-align: center
+        text-align: center;
+        position: relative;
+        left: -18px;
     }
     
     .weaponstable > div {
@@ -624,10 +635,12 @@ button:active{
         list-style-type: none;
         padding:0px;
     }
+
+    
     
     .weaponabilities li{
         display: inline-block;
-        
+        list-style-type: none;
     }
     
     .weaponabilities .text{
