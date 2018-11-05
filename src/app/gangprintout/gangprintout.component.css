@@ -470,20 +470,24 @@ button:active{
     .actionatt {
      position: relative;
     top: -30px;
+    color:black;
     }
     
     .lifeatt {
         position: relative;
     top: -30px;
+    color: black;
         }
     .willatt {
         position: relative;
     top: -30px;
+    color: black;
     }
     
     .commandatt {
         position: relative;
     top: -30px;
+    color: black;
     }
 
     .rulesheader{
