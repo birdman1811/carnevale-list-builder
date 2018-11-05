@@ -274,8 +274,7 @@
 
 .weaponstableheader{
     color: white;
-    background-color: #9a191a;
-    
+    background-color: #9a191a;    
 }
 
 .weaponstable {
@@ -378,7 +377,7 @@ button:active{
 @media screen and (max-width:800px){
     .wrapper {
         display: grid;
-        grid-template-columns: 250px;    
+        grid-template-columns: 100%;    
         float:left;        
       }
 
@@ -394,10 +393,10 @@ button:active{
 
       .column1 {
         display: grid;
-        grid-template-columns: 220px;
+        grid-template-columns: 90%;
         grid-template-rows: auto; 
         float: left;
-        padding:5px;
+        padding:2%;
     }
 
       .charimage{
@@ -409,7 +408,7 @@ button:active{
         position: relative;
         top: -38px;
         left: 90px;
-        width: 10px;
+        width: 5%;
         font-size: large;
         color: whitesmoke;
     }
@@ -444,7 +443,7 @@ button:active{
 
     .statstable {
         display: grid;
-        grid-template-columns: 35px 35px 35px 35px 35px;
+        grid-template-columns: 18% 18% 18% 18% 25%;
         grid-template-rows: 50% 50%;
         float: left;
         grid-column-gap: 2px;
@@ -455,13 +454,13 @@ button:active{
     }
 
     .attimg{
-        height:30px;
-        width: 30px;
+        height:28px;
+        width:28px;;
     }
 
     .attributestable {
         display: grid;
-        grid-template-columns: 40px 40px 40px 40px;
+        grid-template-columns: 25% 25% 25% 25%;
         float: left;
         grid-column-gap: 2px;
         text-align: center;
@@ -522,7 +521,7 @@ button:active{
     .specialrules{
         list-style-type: disc;
         padding: 5px;
-        Width: 130px;
+        Width: 50%;
         height: auto;
         
     }
@@ -557,7 +556,7 @@ button:active{
 
     .weaponstable {
         display: grid;
-        grid-template-columns: 55px 24px 24px 24px 24px 115px;
+        grid-template-columns: 20% 9% 9% 9% 9% 40%;
         grid-template-rows: 20px auto;
         float: left;
         grid-column-gap: 0px;
@@ -567,6 +566,12 @@ button:active{
         text-align: center;
         position: relative;
         left: -18px;
+    }
+
+    .weaponstableheader{
+        color: white;
+        background-color: #9a191a; 
+        font-size: xx-small;   
     }
     
     .weaponstable > div {
@@ -652,8 +657,8 @@ button:active{
     }
 
     .commandimg{
-        width: 250px;
-         height:100px;
+        width: 80%;
+         height:50%;
     }
 
     .html2canvas-container {

@@ -535,12 +535,14 @@ and item-->
                            </li>
                         </ul>
                      </div>
-                     <div>                       
-                        <div class = "weaponabilities">                           
-                              <li *ngFor="let weapon of character.weapons">
+                     <div>
+                        <ul class = "weaponabilities">
+                           <ul *ngFor="let weapon of character.weapons">
+                              <li *ngFor="let weaponAbility of weapon.weaponAbilities">
                                  <span class = text>{{weaponAbility.weaponAbility}},</span>
-                                </li>                       
-                              </div>                        
+                              </li>
+                           </ul>
+                        </ul>
                      </div>
                   </div>
                   <div>

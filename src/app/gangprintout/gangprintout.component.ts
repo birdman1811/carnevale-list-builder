@@ -4,11 +4,14 @@ import { DialogData } from '../charactersheet/charactersheet.component';
 import * as jspdf from 'jspdf';  
 import html2canvas from 'html2canvas'; 
 
+
 import { Gang } from '../gang';
 
 
 export interface GangDialogData {
   gang: Gang,
+  
+
   }
 
 @Component({
@@ -19,7 +22,10 @@ export interface GangDialogData {
 
 export class GangprintoutComponent {  
 
- 
+ private width: number;
+ private height: number;
+
+
 constructor(
   public dialogRef: MatDialogRef<GangprintoutComponent>,
 @Inject(MAT_DIALOG_DATA) public data: GangDialogData){
@@ -41,6 +47,43 @@ any higher and it becomes very large and not suitable to download*/
 
 public printPDF(){  
 
+  if (window.innerWidth <= 800){
+    console.log ("Mobile Version Downloading")
+    var content = document.getElementById("container");
+
+html2canvas(content,{
+useCORS: true,
+pagesplit: true,
+scale:2
+}).then(canvas =>{  
+  var imgWidth = 50;   
+      var pageHeight = 295;    
+      var imgHeight = canvas.height * imgWidth / canvas.width;  
+      var heightLeft = imgHeight;  
+
+  const contentDataURL = canvas.toDataURL('image/png')
+  let pdf = new jspdf('p', 'mm', 'a4');
+  var option = {
+    useCORS: true,
+    pagesplit: true,
+  }
+  var position = 0;
+  pdf.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight, option);
+  heightLeft -= pageHeight;
+
+  while (heightLeft >= 0) {
+    position = heightLeft - imgHeight;
+    pdf.addPage();
+    pdf.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight, option);
+    heightLeft -= pageHeight;
+  }  
+
+  pdf.save('ganglist.pdf');
+});
+  }
+
+  else{
+    console.log("Desktop Version Downloading")
   var content = document.getElementById("container");
 
 html2canvas(content,{
@@ -72,9 +115,9 @@ scale:2
 
   pdf.save('ganglist.pdf');
 });
+}}
 }
 
-}
 
 
 
