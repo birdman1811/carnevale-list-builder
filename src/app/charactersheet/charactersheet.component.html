@@ -35,7 +35,7 @@
                         <div>{{data.character.protection}}</div> 
                         <div>{{data.character.mind}}</div>                         
                     </div></div> 
-                    <div><div class = "attributestable">
+                    <div class = "attributestable">
                         <div> <img class = "attimg" src = "../../assets/images/ActionPoints .png">
                           <div class = "actionatt">{{data.character.actionpoints}}</div>                          
                           <div class = "text">Action</div>
@@ -52,11 +52,11 @@
                         <div class = "commandatt">{{data.character.commandpoints}}</div>
                         <div class  = "text">Command</div></div>
                         
-                    </div> </div>
+                    </div> 
                 </div></div> 
                 
             </div></div>
-            <div><div class = "rulescontainer">
+            <div class = "rulescontainer">
                <div><div class ="rulesheader"> Special Rules: 
                    <ul class ="specialrules">
                        <li *ngFor="let specialrule of data.character.specialrules">
@@ -71,13 +71,13 @@
                </div></div>  
                <div>
                    <ul class = "uniquerules"> 
-                        <div class = "whiteheader">Unique Rules:</div>                   
+                        <span class = "whiteheader">Unique Rules:</span>                   
                        <li *ngFor="let uniquerule of data.character.uniqueRules">
                            <span class = text>{{uniquerule.uniqueRuleText}}</span>
                        </li>
                    </ul>
                </div>  
-            </div></div>
+            </div>
             <div class = "weaponstable">
                 <div><div class ="tableheader"> Weapon</div></div>
                 <div><div class ="tableheader"> RNG</div></div>

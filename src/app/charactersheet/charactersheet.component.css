@@ -53,6 +53,8 @@
     border: 10px #9a191a;
     border-style: double;
     padding: 5px;
+    position: relative;
+    top: 35px;
     
 }
 
@@ -130,7 +132,7 @@ color: #9a191a;
 .column2 {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: auto auto auto auto auto;
     float: left;
     padding-top: 10px;
     padding-bottom: 10px;

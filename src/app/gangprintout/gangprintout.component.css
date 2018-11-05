@@ -199,7 +199,7 @@
 .column2 {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: auto auto auto auto auto;
     float: left;
 }
 
