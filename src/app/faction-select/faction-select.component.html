@@ -1,11 +1,14 @@
-
+<div>
 <ul class="factions">
   <li *ngFor="let faction of factions" (click)="onSelect(faction)">
     <span class="factionbadge"><img class = "factionicon" src="{{faction.reverseicon}}" ></span>
     </li>
 </ul>
 <br>
+<br>
 <p></p>
+
+</div>
 <h1>Select Faction</h1>
 
 <!--Very simple page really, above loads the faction badges, below is the screen that appears when one is selected.-->

@@ -18,7 +18,9 @@
   }
 
   h1{
-    width:auto;
+    width:100%;
+    float: left;
+    text-align: center;
   }
   
   .factionname{
@@ -168,7 +170,7 @@
     grid-template-rows:  auto ;
   }
   h1{
-    font-size: larger
+    font-size: larger;
   }
   .strip{
     display: none;

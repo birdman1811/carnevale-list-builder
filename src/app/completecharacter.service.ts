@@ -15,6 +15,7 @@ import { SpecialruleService } from './specialrule.service';
 import { UniqueruleService } from './uniquerule.service';
 import { WeaponService } from './weapon.service';
 import { WeaponabilityService } from './weaponability.service'
+import { stringify } from '@angular/core/src/util';
 
 
 
@@ -30,6 +31,7 @@ export class CompletecharacterService {
   weaponabilities: WeaponAbility[];
   weapons: Weapon[]
   carnevaleCharacter: CarnevaleCharacter;
+  
 
   completeCharacter(character: CarnevaleCharacter) {
     
@@ -49,7 +51,8 @@ export class CompletecharacterService {
     var mind = character.mind;
     var movement = character.movement;
     var protection = character.protection;
-    var willpoints = character.willpoints;    
+    var willpoints = character.willpoints;   
+    
      
     
     var charactercomplete: CompleteCharacter = new CompleteCharacter(charId, name, charType, ducats, imageUrl, faction, actionpoints, attack, baseSize, commandpoints, dexterity,
@@ -106,7 +109,7 @@ export class CompletecharacterService {
        newspecialrules = specialrules;
        return newspecialrules;
       });
-  }
+  }  
 
   getUniquerules(id: number) {
     var newuniquerules = new Array;
@@ -131,6 +134,7 @@ export class CompletecharacterService {
     this.weapons =[];
     this.weaponabilities =[];
     this.uniquerules =[];
+    
   }
 
 
