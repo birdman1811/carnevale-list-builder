@@ -125,7 +125,7 @@
                     <ul class = "weaponabilities">
                         <ul *ngFor="let weapon of data.character.weapons">
                             <li *ngFor="let weaponAbility of weapon.weaponAbilities">
-                                <div class = "text">{{weaponAbility.weaponAbility}},</div>
+                                <span class = "text">{{weaponAbility.weaponAbility}},&nbsp;</span>
                             </li>
                         </ul>
                     </ul>
