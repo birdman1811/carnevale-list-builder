@@ -75,10 +75,10 @@
     display: grid;
     grid-template-columns: 300px 650px;    
     float:left;
-    background-color: rgb(247, 225, 225); 
+    background-color: rgb(255, 244, 244); 
     border-block-end-color: #9a191a;
     border-style: double;  
-    background-image: radial-gradient(white 1%, rgb(247, 225, 225)90%, #9a191a );
+    /*background-image: radial-gradient(white 1%, rgb(247, 225, 225)90%, #9a191a );*/
   }
 
 .column1 {
