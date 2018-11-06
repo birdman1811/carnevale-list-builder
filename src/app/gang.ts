@@ -111,6 +111,7 @@ finderror() {
     var fateused: number = 0;
     var justiceused: number = 0;
     this.gondolieres = 0;
+    this.bridesOfDracule = 0;
     
 for(let character of this.characters){
     if (character.charType == "Leader"){
@@ -356,7 +357,7 @@ resetgang(): void{
     this.isAcceptable = true;
     this.SetFace();
     this.gondolieres = 0;
-
+    this.bridesOfDracule = 0;
 }
 
 SetFace(){
