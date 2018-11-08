@@ -341,6 +341,15 @@ button:active{
     width:280px;
 }
 
+@media not all and (min-resolution:.001dpcm) {   
+    .uniquerules { 
+        position: relative; 
+        top: -20px;
+    } 
+} 
+
+
+
 @media screen and (max-width:800px){    
 
     .wrapper {

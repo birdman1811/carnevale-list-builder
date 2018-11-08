@@ -22,9 +22,7 @@ export interface GangDialogData {
 
 export class GangprintoutComponent {  
 
- private width: number;
- private height: number;
-
+ 
 
 constructor(
   public dialogRef: MatDialogRef<GangprintoutComponent>,

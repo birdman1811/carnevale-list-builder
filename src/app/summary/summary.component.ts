@@ -42,14 +42,7 @@ export class SummaryComponent implements OnInit {
       
     data: {gang: this.gang},
   }
-);
-
-
-
-gangsheetdialogRef.afterClosed().subscribe(result => {
-  console.log('The dialog was closed with '+result);
-})
-  
+);  
   
   }
 

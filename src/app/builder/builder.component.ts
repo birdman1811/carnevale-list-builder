@@ -99,7 +99,7 @@ export class BuilderComponent implements OnInit {
       this.gang.name = "New Gang";
     }
 
-  /* Method called to complete the characters using all tables needed form the API
+  /* Method called to complete the characters using all tables needed from the API
    */
   getCompleteCharacters(): void {    
         
@@ -203,7 +203,7 @@ export class BuilderComponent implements OnInit {
     
         /* Closing dialog code. True, character gets added, false nothing happens.*/
         dialogRef.afterClosed().subscribe(result => {
-          console.log('The dialog was closed with '+result);
+         
           if (result == true){
             this.gang.addCharacter(selectedCharacter);
             
@@ -216,7 +216,7 @@ export class BuilderComponent implements OnInit {
                 break;
               }
               else{
-                console.log("character not in gang");
+                
               }
               element = element +1; 
             }
@@ -265,7 +265,7 @@ export class BuilderComponent implements OnInit {
 );
 
     itemdialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed with '+result);
+      
       if (result == true){
         this.gang.addEquipment(Item);
       }
@@ -277,7 +277,7 @@ export class BuilderComponent implements OnInit {
             break;
           }
           else{
-            console.log("equipment not selected by gang");
+            
           }
           element = element +1;
         }
