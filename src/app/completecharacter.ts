@@ -2,7 +2,7 @@ import { Keyword } from './keyword'
 import { Uniquerule } from './uniquerule'
 import { Specialrule } from './specialrule'
 import { Weapon } from './weapon'
-import { Observable, of } from 'rxjs';
+
 
 
 export class CompleteCharacter{
