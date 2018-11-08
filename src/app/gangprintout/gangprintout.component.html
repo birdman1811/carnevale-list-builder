@@ -409,9 +409,14 @@ and item-->
                      <div class ="tableheader">
                         General Rules: 
                         <ul class ="specialrules">
-                           <li *ngFor="let specialrule of character.specialrules">
-                              <span class = text>{{specialrule.rule}}({{specialrule.amount}}), </span>
-                           </li>
+                            <li *ngFor="let specialrule of data.character.specialrules">
+                                <div *ngIf="specialrule.amount >=-9">
+                                <span class = text>{{specialrule.rule}}({{specialrule.amount}}),&nbsp; </span>
+                             </div>
+                                <div *ngIf="specialrule.amount == -10">
+                                     <span class = text>{{specialrule.rule}},&nbsp; </span>
+                                </div> 
+                            </li>
                         </ul>
                      </div>
                   </div>
