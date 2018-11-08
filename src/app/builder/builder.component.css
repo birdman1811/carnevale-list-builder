@@ -194,6 +194,10 @@
       width :100%;
     }
 
+    h2{
+      font-size: small;
+    }
+
     .factionicon{
       height: 50px;
       width: 50px;
