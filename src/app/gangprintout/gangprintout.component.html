@@ -3,7 +3,10 @@ and item-->
 
 <h1 mat-dialog-title>Gang Summary</h1>
 <button class = "printPDF" title="Print Gang PDF"
-      (click)="printPDF()">Download PDF</button>
+      (click)="printPDF()">Download Full Colour PDF</button>
+
+      <button class = "printPDF" title="Print Gang PDF"
+      (click)="printHTML()">Download plain HTML</button>
       
       <mat-dialog-content>
    <div id = "container" #content>
@@ -611,6 +614,229 @@ and item-->
       </ul>
       <div class = "listheader"><p>Total Ducats: {{data.gang.actualDucats}}</p></div>
    </div>
+
+<div class = "htmlprintout">
+   <div id = "print" #content>
+     
+     <div ><p>Faction: {{data.gang.faction}}</p></div>
+     <div ><img src="{{data.gang.command}}" width = "750"></div>
+     <div ><p>CHARACTERS:</p></div>
+     <ul >
+        <div ><h1>Leaders</h1></div>
+         <li *ngFor="let character of data.gang.leaders">
+            <p>-----------------------------------------------------------------------------------------------------------------------------</p>             
+                                    
+                     <div><h2>{{character.name}}</h2>
+                      <div >{{character.ducats}} points || Base: {{character.baseSize}} mm</div>
+                        <br>
+                        <div> 
+                            <div >||Action: {{character.actionpoints}} || Life: {{character.lifepoints}} || Will: {{character.willpoints}} || Command: {{character.commandpoints}} ||</div>
+                                     
+                           </div> 
+                           <br>
+                      <div>|| MOV: {{character.movement}} || DEX: {{character.dexterity}} || ATT: {{character.attack}} || PRO: {{character.protection}} || MIND: {{character.mind}} ||</div>
+                        <br>
+                      <div>
+                        <h3>Weapons:</h3>
+                          <ul >
+                             <li *ngFor="let weapon of character.weapons">
+                                <span >{{weapon.weapon}} Range: {{weapon.weaponRange}} Evasion: {{weapon.evasion}} Damage:  {{weapon.damage}} Penetration: {{weapon.penetration}} 
+                                 <ul> 
+                                 <li *ngFor="let weaponAbility of weapon.weaponAbilities">
+                                    <span>{{weaponAbility.weaponAbility}}</span>
+                                  </li>
+                                 </ul>
+                               </span>
+                             </li>
+                          </ul>
+                       </div>
+                       <div >
+                          <h3>General Rules:</h3> 
+                          <ul >
+                             <li *ngFor="let specialrule of character.specialrules">
+                                 <div *ngIf="specialrule.amount >=-9">
+                                 <span >{{specialrule.rule}}({{specialrule.amount}})&nbsp; </span>
+                              </div>
+                                 <div *ngIf="specialrule.amount == -10">
+                                      <span>{{specialrule.rule}}&nbsp; </span>
+                                 </div> 
+                             </li>
+                          </ul>
+                       </div>  
+                       <div>
+                         <h3> Character Rules:</h3>
+                          <ul >
+                             <li *ngFor="let uniquerule of character.uniqueRules">
+                                <span >{{uniquerule.uniqueRuleText}}</span>
+                             </li>
+                          </ul>
+                       </div>           
+                    </div>  <h3>Keywords:</h3>                          
+                           <ul >
+                            
+                              <li *ngFor="let keyword of character.keywords">                                
+                                 {{keyword.keyword}}
+                              </li>
+                           </ul>      
+         </li>
+      </ul>
+
+      <ul >
+          <div ><h1>Heroes</h1></div>
+           <li *ngFor="let character of data.gang.heroes">
+              <p>-----------------------------------------------------------------------------------------------------------------------------</p>             
+                                      
+                       <div><h2>{{character.name}}</h2>
+                        <div >{{character.ducats}} points ||  Base: {{character.baseSize}} mm</div>
+                          <br>
+                          <div> 
+                              <div >||Action: {{character.actionpoints}} || Life: {{character.lifepoints}} || Will: {{character.willpoints}} || Command: {{character.commandpoints}} ||</div>
+                                       
+                             </div> 
+                             <br>
+                        <div>|| MOV: {{character.movement}} || DEX: {{character.dexterity}} || ATT: {{character.attack}} || PRO: {{character.protection}} || MIND: {{character.mind}} || </div>
+                          <br>
+                        <div>
+                          <h3>Weapons:</h3>
+                            <ul >
+                               <li *ngFor="let weapon of character.weapons">
+                                  <span >{{weapon.weapon}} Range: {{weapon.weaponRange}} Evasion: {{weapon.evasion}} Damage:  {{weapon.damage}} Penetration: {{weapon.penetration}} 
+                                   <ul> 
+                                   <li *ngFor="let weaponAbility of weapon.weaponAbilities">
+                                      <span>{{weaponAbility.weaponAbility}}</span>
+                                    </li>
+                                   </ul>
+                                 </span>
+                               </li>
+                            </ul>
+                         </div>
+                         <div >
+                            <h3>General Rules:</h3> 
+                            <ul >
+                               <li *ngFor="let specialrule of character.specialrules">
+                                   <div *ngIf="specialrule.amount >=-9">
+                                   <span >{{specialrule.rule}}({{specialrule.amount}})&nbsp; </span>
+                                </div>
+                                   <div *ngIf="specialrule.amount == -10">
+                                        <span>{{specialrule.rule}}&nbsp; </span>
+                                   </div> 
+                               </li>
+                            </ul>
+                         </div>  
+                         <div>
+                           <h3> Character Rules:</h3>
+                            <ul >
+                               <li *ngFor="let uniquerule of character.uniqueRules">
+                                  <span >{{uniquerule.uniqueRuleText}}</span>
+                               </li>
+                            </ul>
+                         </div>           
+                      </div>  <h3>Keywords:</h3>                          
+                             <ul >
+                              
+                                <li *ngFor="let keyword of character.keywords">                                
+                                   {{keyword.keyword}}
+                                </li>
+                             </ul>      
+           </li>
+        </ul>
+
+        <ul >
+            <div ><h1>Henchmen</h1></div>
+             <li *ngFor="let character of data.gang.henchmen">
+                <p>-----------------------------------------------------------------------------------------------------------------------------</p>             
+                                        
+                         <div><h2>{{character.name}}</h2>
+                          <div >{{character.ducats}} points ||  Base: {{character.baseSize}} mm</div>
+                            <br>
+                            <div> 
+                                <div > ||Action: {{character.actionpoints}} || Life: {{character.lifepoints}} ||  Will: {{character.willpoints}} ||  Command: {{character.commandpoints}} ||</div>
+                                         
+                               </div> 
+                               <br>
+                          <div>|| MOV: {{character.movement}} || DEX: {{character.dexterity}} || ATT: {{character.attack}} || PRO: {{character.protection}} || MIND: {{character.mind}} ||</div>
+                            <br>
+                          <div>
+                            <h3>Weapons:</h3>
+                              <ul >
+                                 <li *ngFor="let weapon of character.weapons">
+                                    <span >{{weapon.weapon}} Range: {{weapon.weaponRange}} Evasion: {{weapon.evasion}} Damage:  {{weapon.damage}} Penetration: {{weapon.penetration}} 
+                                     <ul> 
+                                     <li *ngFor="let weaponAbility of weapon.weaponAbilities">
+                                        <span>{{weaponAbility.weaponAbility}}</span>
+                                      </li>
+                                     </ul>
+                                   </span>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div >
+                              <h3>General Rules:</h3> 
+                              <ul >
+                                 <li *ngFor="let specialrule of character.specialrules">
+                                     <div *ngIf="specialrule.amount >=-9">
+                                     <span >{{specialrule.rule}}({{specialrule.amount}})&nbsp; </span>
+                                  </div>
+                                     <div *ngIf="specialrule.amount == -10">
+                                          <span>{{specialrule.rule}}&nbsp; </span>
+                                     </div> 
+                                 </li>
+                              </ul>
+                           </div>  
+                           <div>
+                             <h3> Character Rules:</h3>
+                              <ul >
+                                 <li *ngFor="let uniquerule of character.uniqueRules">
+                                    <span >{{uniquerule.uniqueRuleText}}</span>
+                                 </li>
+                              </ul>
+                           </div>           
+                        </div>  <h3>Keywords:</h3>                          
+                               <ul >
+                                
+                                  <li *ngFor="let keyword of character.keywords">                                
+                                     {{keyword.keyword}}
+                                  </li>
+                               </ul>      
+             </li>
+          </ul>
+
+          <ul >
+              <div ><p>Equipment</p></div>
+               <li *ngFor="let item of data.gang.equipment">
+                  <p>-----------------------------------------------------------------------------------------------------------------------------</p>             
+                                          
+                           <div><h1>{{item.equipment}}</h1>
+
+                            <div>      
+                                <div>
+                                  
+                                  <div >
+                                      Cost: {{item.equipmentCost}} ducats
+                                    </div>
+                                </div>
+                              
+                              <div >                
+                        
+                                <div >
+                                  {{item.equipmentText}}
+                                </div>
+                        
+                                
+                        
+                              </div>
+                        
+                          </div> 
+                          </div>     
+               </li>
+            </ul>
+
+
+
+
+
+   </div>
+  </div>
 </mat-dialog-content>
 <mat-dialog-actions>
    <button mat-button [mat-dialog-close]="true">Close</button>

@@ -3,7 +3,7 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 import { DialogData } from '../charactersheet/charactersheet.component';
 import * as jspdf from 'jspdf';  
 import html2canvas from 'html2canvas'; 
-import  print  from 'print-js';
+import * as rasterizeHTML from 'rasterizehtml';
 
 
 import { Gang } from '../gang';
@@ -120,6 +120,22 @@ scale:2
 
 
 }
+
+public printHTML(){ 
+
+  var content = document.getElementById("print").innerHTML;
+  var mywindow = window.open('', 'Print', 'height = 600,width = 800');
+
+  mywindow.document.write('<html><title>Carnevale Gang Builder</title>');
+  mywindow.document.write('<body >');
+  mywindow.document.write(content);
+  mywindow.document.write('</body></html>');
+
+  mywindow.document.close();
+    mywindow.focus()
+    mywindow.print();
+    mywindow.close();
+} 
 }
 
 
