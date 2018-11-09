@@ -628,16 +628,16 @@ and item-->
                                     
                      <div><h2>{{character.name}}</h2>
                       <div >{{character.ducats}} points || Base: {{character.baseSize}} mm</div>
-                        <br>
+                        
                         <div> 
                             <div >||Action: {{character.actionpoints}} || Life: {{character.lifepoints}} || Will: {{character.willpoints}} || Command: {{character.commandpoints}} ||</div>
                                      
                            </div> 
-                           <br>
+                           
                       <div>|| MOV: {{character.movement}} || DEX: {{character.dexterity}} || ATT: {{character.attack}} || PRO: {{character.protection}} || MIND: {{character.mind}} ||</div>
-                        <br>
+                        
                       <div>
-                        <h3>Weapons:</h3>
+                        <b>Weapons:</b>
                           <ul >
                              <li *ngFor="let weapon of character.weapons">
                                 <span >{{weapon.weapon}} Range: {{weapon.weaponRange}} Evasion: {{weapon.evasion}} Damage:  {{weapon.damage}} Penetration: {{weapon.penetration}} 
@@ -651,7 +651,7 @@ and item-->
                           </ul>
                        </div>
                        <div >
-                          <h3>General Rules:</h3> 
+                          <b>General Rules:</b> 
                           <ul >
                              <li *ngFor="let specialrule of character.specialrules">
                                  <div *ngIf="specialrule.amount >=-9">
@@ -664,14 +664,14 @@ and item-->
                           </ul>
                        </div>  
                        <div>
-                         <h3> Character Rules:</h3>
+                         <b> Character Rules:</b>
                           <ul >
                              <li *ngFor="let uniquerule of character.uniqueRules">
                                 <span >{{uniquerule.uniqueRuleText}}</span>
                              </li>
                           </ul>
                        </div>           
-                    </div>  <h3>Keywords:</h3>                          
+                    </div>  <b>Keywords:</b>                          
                            <ul >
                             
                               <li *ngFor="let keyword of character.keywords">                                
@@ -688,16 +688,16 @@ and item-->
                                       
                        <div><h2>{{character.name}}</h2>
                         <div >{{character.ducats}} points ||  Base: {{character.baseSize}} mm</div>
-                          <br>
+                          
                           <div> 
                               <div >||Action: {{character.actionpoints}} || Life: {{character.lifepoints}} || Will: {{character.willpoints}} || Command: {{character.commandpoints}} ||</div>
                                        
                              </div> 
-                             <br>
+                             
                         <div>|| MOV: {{character.movement}} || DEX: {{character.dexterity}} || ATT: {{character.attack}} || PRO: {{character.protection}} || MIND: {{character.mind}} || </div>
-                          <br>
+                          
                         <div>
-                          <h3>Weapons:</h3>
+                          <b>Weapons:</b>
                             <ul >
                                <li *ngFor="let weapon of character.weapons">
                                   <span >{{weapon.weapon}} Range: {{weapon.weaponRange}} Evasion: {{weapon.evasion}} Damage:  {{weapon.damage}} Penetration: {{weapon.penetration}} 
@@ -711,7 +711,7 @@ and item-->
                             </ul>
                          </div>
                          <div >
-                            <h3>General Rules:</h3> 
+                            <b>General Rules:</b> 
                             <ul >
                                <li *ngFor="let specialrule of character.specialrules">
                                    <div *ngIf="specialrule.amount >=-9">
@@ -724,14 +724,14 @@ and item-->
                             </ul>
                          </div>  
                          <div>
-                           <h3> Character Rules:</h3>
+                           <b> Character Rules:</b>
                             <ul >
                                <li *ngFor="let uniquerule of character.uniqueRules">
                                   <span >{{uniquerule.uniqueRuleText}}</span>
                                </li>
                             </ul>
                          </div>           
-                      </div>  <h3>Keywords:</h3>                          
+                      </div>  <b>Keywords:</b>                          
                              <ul >
                               
                                 <li *ngFor="let keyword of character.keywords">                                
@@ -748,16 +748,16 @@ and item-->
                                         
                          <div><h2>{{character.name}}</h2>
                           <div >{{character.ducats}} points ||  Base: {{character.baseSize}} mm</div>
-                            <br>
+                            
                             <div> 
                                 <div > ||Action: {{character.actionpoints}} || Life: {{character.lifepoints}} ||  Will: {{character.willpoints}} ||  Command: {{character.commandpoints}} ||</div>
                                          
                                </div> 
                                <br>
                           <div>|| MOV: {{character.movement}} || DEX: {{character.dexterity}} || ATT: {{character.attack}} || PRO: {{character.protection}} || MIND: {{character.mind}} ||</div>
-                            <br>
+                            
                           <div>
-                            <h3>Weapons:</h3>
+                            <b>Weapons:</b>
                               <ul >
                                  <li *ngFor="let weapon of character.weapons">
                                     <span >{{weapon.weapon}} Range: {{weapon.weaponRange}} Evasion: {{weapon.evasion}} Damage:  {{weapon.damage}} Penetration: {{weapon.penetration}} 
@@ -771,7 +771,7 @@ and item-->
                               </ul>
                            </div>
                            <div >
-                              <h3>General Rules:</h3> 
+                              <b>General Rules:</b> 
                               <ul >
                                  <li *ngFor="let specialrule of character.specialrules">
                                      <div *ngIf="specialrule.amount >=-9">
@@ -784,14 +784,14 @@ and item-->
                               </ul>
                            </div>  
                            <div>
-                             <h3> Character Rules:</h3>
+                             <b> Character Rules:</b>
                               <ul >
                                  <li *ngFor="let uniquerule of character.uniqueRules">
                                     <span >{{uniquerule.uniqueRuleText}}</span>
                                  </li>
                               </ul>
                            </div>           
-                        </div>  <h3>Keywords:</h3>                          
+                        </div>  <b>Keywords:</b>                          
                                <ul >
                                 
                                   <li *ngFor="let keyword of character.keywords">                                
