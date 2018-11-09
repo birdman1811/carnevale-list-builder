@@ -420,6 +420,11 @@
         font-size: larger;
     }
 
+    .uniquerules .text {
+        color: #9a191a;
+        font-size: x-small;
+    }
+
     .weaponstable {
         display: grid;
         grid-template-columns: 20% 7% 7% 7% 7% 52%;
