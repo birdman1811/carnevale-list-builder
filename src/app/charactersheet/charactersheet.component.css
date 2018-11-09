@@ -525,6 +525,10 @@
         display: inline-block;
     }
 
+    .basesection{
+        display: none;
+    }
+
     .mobilebasesection{
         display: block;
         color:#9a191a;

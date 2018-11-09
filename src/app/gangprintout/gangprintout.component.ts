@@ -3,9 +3,11 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 import { DialogData } from '../charactersheet/charactersheet.component';
 import * as jspdf from 'jspdf';  
 import html2canvas from 'html2canvas'; 
+import  print  from 'print-js';
 
 
 import { Gang } from '../gang';
+import printJS from 'print-js';
 
 
 export interface GangDialogData {
@@ -113,7 +115,11 @@ scale:2
 
   pdf.save('ganglist.pdf');
 });
-}}
+}
+
+
+
+}
 }
 
 
