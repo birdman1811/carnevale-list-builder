@@ -124,17 +124,19 @@ scale:2
 public printHTML(){ 
 
   var content = document.getElementById("print").innerHTML;
-  var mywindow = window.open('', 'Print', 'height = 600,width = 800');
+  var mywindow = window.open('', 'Print', 'height = 400,width = 600');
 
   mywindow.document.write('<html><title>Carnevale Gang Builder</title>');
   mywindow.document.write('<body >');
   mywindow.document.write(content);
   mywindow.document.write('</body></html>');
+  mywindow.document.close(); // necessary for IE >= 10
 
-  mywindow.document.close();
+  mywindow.onload=function(){
     mywindow.focus()
     mywindow.print();
     mywindow.close();
+  };
 } 
 }
 
