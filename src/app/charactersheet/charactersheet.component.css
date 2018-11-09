@@ -174,6 +174,25 @@
         display: inline-block;
     }
 
+    .uniquerules{
+        list-style-type: none;
+        padding: 0;
+        border: 10px #9a191a;
+        border-style: double;
+        padding: 5px; 
+        float: left;       
+    }
+    
+    .whiteheader{
+        color: #9a191a;
+        font-family: buckingham;
+    }
+    
+    .uniquerules .text {
+        color: #9a191a;
+        font-size: small;
+    }
+
     .weaponstable {
         display: grid;
         grid-template-columns: 148px 48px 48px 48px 48px 280px;

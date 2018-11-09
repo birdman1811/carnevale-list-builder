@@ -66,10 +66,20 @@
                                                 </li>
                                             </ul>
                                         </div>
+                                        
                           
                             </div>
-                            <br>
-                            <br>
+
+                            <div>
+                                <ul class = "uniquerules"> 
+                                <span class = "whiteheader">Unique Rules:</span>                   
+                                    <li *ngFor="let uniquerule of data.character.uniqueRules">
+                                        <span class = text>{{uniquerule.uniqueRuleText}}</span>
+                                     </li>
+                                </ul>
+                            </div>
+                            
+                            
                             <div class = "weaponstable">
                                     <div><div class ="tableheader"> Weapon</div></div>
                                     <div><div class ="tableheader"> RNG</div></div>
@@ -123,6 +133,8 @@
                                         </ul>
                                     </div>
                                 </div> 
+                                
+                                        
               </div>
           </div>
         
