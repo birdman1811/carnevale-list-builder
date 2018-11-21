@@ -46,25 +46,34 @@ getGangCost(): number {
 
 removeThisCharacter(char: CompleteCharacter){
     var element: number = 0;
+    var removed: boolean = false;
+    while (removed == false){
     for (let character of this.characters){
             if (char.name == character.name ){
-            this.removeCharacter(element, char)
+            this.removeCharacter(element, char)            
+            removed = true;  
+            break;                     
             }
-        element = element +1;
-
+        element = element +1;            
         }
+    }
         this.SortCharacters()
         
 }
 
 removeThisEquipment(item: Equipment){
     var element: number = 0;
+    var removed: boolean = false;
+    while (removed == false){
     for (let equipment of this.equipment){
         if (equipment.equipment == item.equipment){
             this.removeItem(element, item)
+            removed = true;
+            break;
         }
         element = element +1;
     }
+}
 
 }
 
