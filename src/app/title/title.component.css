@@ -19,3 +19,9 @@ p{
       font-size: x-large;
       color: #9a191a;
   }
+
+  .versionText{
+    color: grey;
+    font-size: 8pt;
+    text-align: center
+  }
