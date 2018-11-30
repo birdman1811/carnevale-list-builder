@@ -154,21 +154,36 @@ and item-->
                         <div>
                            <ul class = "weaponevade">
                               <li *ngFor="let weapon of character.weapons">
-                                 <span class = text>{{weapon.evasion}}</span>
+                                    <div *ngIf = "weapon.evasion != 0">
+                                          <span class = text>{{weapon.evasion}}</span>
+                                      </div>
+                                      <div *ngIf = "weapon.evasion == 0">
+                                          <span class = text>-</span>
+                                      </div>
                               </li>
                            </ul>
                         </div>
                         <div>
                            <ul class = "weapondamage">
                               <li *ngFor="let weapon of character.weapons">
-                                 <span class = text>{{weapon.damage}}</span>
+                                    <div *ngIf = "weapon.damage != 0">
+                                          <span class = text>{{weapon.damage}}</span>
+                                      </div>
+                                      <div *ngIf = "weapon.damage == 0">
+                                          <span class = text>-</span>
+                                      </div>
                               </li>
                            </ul>
                         </div>
                         <div>
                            <ul class = "weaponpenetration">
                               <li *ngFor="let weapon of character.weapons">
-                                 <span class = text>{{weapon.penetration}}</span>
+                                    <div *ngIf = "weapon.penetration != 0">
+                                          <span class = text>{{weapon.penetration}}</span>
+                                      </div>
+                                      <div *ngIf = "weapon.penetration == 0">
+                                          <span class = text>-</span>
+                                      </div>
                               </li>
                            </ul>
                         </div>
@@ -343,26 +358,41 @@ and item-->
                           </ul>
                        </div>
                        <div>
-                          <ul class = "weaponevade">
-                             <li *ngFor="let weapon of character.weapons">
-                                <span class = text>{{weapon.evasion}}</span>
-                             </li>
-                          </ul>
-                       </div>
-                       <div>
-                          <ul class = "weapondamage">
-                             <li *ngFor="let weapon of character.weapons">
-                                <span class = text>{{weapon.damage}}</span>
-                             </li>
-                          </ul>
-                       </div>
-                       <div>
-                          <ul class = "weaponpenetration">
-                             <li *ngFor="let weapon of character.weapons">
-                                <span class = text>{{weapon.penetration}}</span>
-                             </li>
-                          </ul>
-                       </div>
+                           <ul class = "weaponevade">
+                              <li *ngFor="let weapon of character.weapons">
+                                    <div *ngIf = "weapon.evasion != 0">
+                                          <span class = text>{{weapon.evasion}}</span>
+                                      </div>
+                                      <div *ngIf = "weapon.evasion == 0">
+                                          <span class = text>-</span>
+                                      </div>
+                              </li>
+                           </ul>
+                        </div>
+                        <div>
+                           <ul class = "weapondamage">
+                              <li *ngFor="let weapon of character.weapons">
+                                    <div *ngIf = "weapon.damage != 0">
+                                          <span class = text>{{weapon.damage}}</span>
+                                      </div>
+                                      <div *ngIf = "weapon.damage == 0">
+                                          <span class = text>-</span>
+                                      </div>
+                              </li>
+                           </ul>
+                        </div>
+                        <div>
+                           <ul class = "weaponpenetration">
+                              <li *ngFor="let weapon of character.weapons">
+                                    <div *ngIf = "weapon.penetration != 0">
+                                          <span class = text>{{weapon.penetration}}</span>
+                                      </div>
+                                      <div *ngIf = "weapon.penetration == 0">
+                                          <span class = text>-</span>
+                                      </div>
+                              </li>
+                           </ul>
+                        </div>
                        <div>
                           <ul class = "weaponabilities">
                              <ul *ngFor="let weapon of character.weapons">
@@ -533,26 +563,41 @@ and item-->
                         </ul>
                      </div>
                      <div>
-                        <ul class = "weaponevade">
-                           <li *ngFor="let weapon of character.weapons">
-                              <span class = text>{{weapon.evasion}}</span>
-                           </li>
-                        </ul>
-                     </div>
-                     <div>
-                        <ul class = "weapondamage">
-                           <li *ngFor="let weapon of character.weapons">
-                              <span class = text>{{weapon.damage}}</span>
-                           </li>
-                        </ul>
-                     </div>
-                     <div>
-                        <ul class = "weaponpenetration">
-                           <li *ngFor="let weapon of character.weapons">
-                              <span class = text>{{weapon.penetration}}</span>
-                           </li>
-                        </ul>
-                     </div>
+                           <ul class = "weaponevade">
+                              <li *ngFor="let weapon of character.weapons">
+                                    <div *ngIf = "weapon.evasion != 0">
+                                          <span class = text>{{weapon.evasion}}</span>
+                                      </div>
+                                      <div *ngIf = "weapon.evasion == 0">
+                                          <span class = text>-</span>
+                                      </div>
+                              </li>
+                           </ul>
+                        </div>
+                        <div>
+                           <ul class = "weapondamage">
+                              <li *ngFor="let weapon of character.weapons">
+                                    <div *ngIf = "weapon.damage != 0">
+                                          <span class = text>{{weapon.damage}}</span>
+                                      </div>
+                                      <div *ngIf = "weapon.damage == 0">
+                                          <span class = text>-</span>
+                                      </div>
+                              </li>
+                           </ul>
+                        </div>
+                        <div>
+                           <ul class = "weaponpenetration">
+                              <li *ngFor="let weapon of character.weapons">
+                                    <div *ngIf = "weapon.penetration != 0">
+                                          <span class = text>{{weapon.penetration}}</span>
+                                      </div>
+                                      <div *ngIf = "weapon.penetration == 0">
+                                          <span class = text>-</span>
+                                      </div>
+                              </li>
+                           </ul>
+                        </div>
                      <div>
                         <ul class = "weaponabilities">
                            <ul *ngFor="let weapon of character.weapons">
