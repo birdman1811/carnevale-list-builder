@@ -179,6 +179,21 @@
     font-family: buckingham;
   }
 
+  .factions {
+    list-style-type: none;
+    padding: 0;    
+  }
+  
+  .factions .factionbadge{
+    float: left;
+    width: 100;
+    text-align: center;    
+    color: #13100d;
+    font-style: oblique;
+    font-size: large;   
+    width: 14%;
+  }       
+
   .factionicon{
     width: 100px;
     height: 100px;
@@ -186,66 +201,7 @@
   }
 
   
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width:800px){
-    .factionselect, .summary, .characterselect, .characterselect, .characterselect,  .footer  {
-      width :100%;
-    }
-
-    h2{
-      font-size: small;
-    }
-
-    .factionicon{
-      height: 50px;
-      width: 50px;
-    }
-
-    /*Character Button Image Panel*/
-  .carnevalecharacters .characterbutton .characterbuttonimage {
-    float: left;
-    width: 100px;
-    height:100px;
-  }
-
-    /* Character Button style */
-  .carnevalecharacters .characterbutton{
-    float: left;
-    width: 105px;
-    height: 105px;
-    text-align: center;
-    
-    padding: 10px;
-    color: #9a191a;
-    
-  }
-
-  .carnevalecharacters .li{
-    display: inline-block;
-  }
-
-  /*Character Cost Layout*/
-  .carnevalecharacters .characterbutton .ducatsbox {
-    position: relative;  
-    color: whitesmoke;  
-    left: 73px;
-    top: -30px; 
-    width: 20px;       
-    font-size:large;    
-    font-family: buckingham;
-  }
-
-  .equipment .equipmentframe{
-    float: left;
-    width: 200px;
-    text-align: center;
-    border-style: groove;
-    border-color: #9a191a;
-    padding: 10px;
-    color: #9a191a;
-    background-color: #13100d;
-  } 
-      }
+ 
   .characterbuttonimage{
     height: 120px;
     width: 120px;
@@ -280,10 +236,8 @@
   text-align: center;    
   color: #13100d;
   font-style: oblique;
-  font-size: large;    
-  padding: 4%;
-  height: 100px;
-  width: 100px;
+  font-size: large;   
+  width: 14%;
 }       
 /* Clear floats after the columns */
 .row:after {
@@ -366,5 +320,79 @@ button:hover {
   clear: right;
 }
 
-  
+   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+   @media screen and (max-width:800px){
+    .factionselect, .summary, .characterselect, .characterselect, .characterselect,  .footer  {
+      width :100%;
+    }
+
+    h1{
+      font-size: xx-large;
+    }
+
+    h2{
+      font-size: small;
+    }
+
+    .factionicon{
+      height: 50px;
+      width: 50px;
+    }
+
+    /*Character Button Image Panel*/
+  .carnevalecharacters .characterbutton .characterbuttonimage {
+    float: left;
+    width: 100px;
+    height:100px;
+  }
+
+    /* Character Button style */
+  .carnevalecharacters .characterbutton{
+    float: left;
+    width: 105px;
+    height: 105px;
+    text-align: center;
+    
+    padding: 10px;
+    color: #9a191a;
+    
+  }
+
+  .carnevalecharacters .li{
+    display: inline-block;
+  }
+
+  /*Character Cost Layout*/
+  .carnevalecharacters .characterbutton .ducatsbox {
+    position: relative;  
+    color: whitesmoke;  
+    left: 73px;
+    top: -30px; 
+    width: 20px;       
+    font-size:large;    
+    font-family: buckingham;
+  }
+
+  .equipment .equipmentframe{
+    float: left;
+    width: 200px;
+    text-align: center;
+    border-style: groove;
+    border-color: #9a191a;
+    padding: 10px;
+    color: #9a191a;
+    background-color: #13100d;
+  } 
+
+  .factions .factionbadge{
+    float: left;
+    width: 100;
+    text-align: center;    
+    color: #13100d;
+    font-style: oblique;
+    font-size: large;   
+    width: 20%;
+    padding: 7px;
+  }       
+      }
 
