@@ -65,14 +65,13 @@
 </div>
 
 <div class="characterselect">
-    <ul class = "equipment">
+    <ul class = "carnevalecharacters">
         <h2>Equipment</h2>
 
         <li *ngFor="let equipment of equipmentList"(click)="onEquipmentClick(equipment)" >
-            <span class="equipmentframe">
-                <div class = "equipmentname">{{equipment.equipment}}</div>
-                <div class = "equipmentimage"><img class = "equipmentimage" src="{{equipment.icon}}"></div>
-                <div class = "equipmentcost">Ducats: {{equipment.equipmentCost}}</div>
+            <span class="characterbutton">                
+                <div class = "characterbuttonimage"><img class = "characterbuttonimage" src="{{equipment.icon}}"></div>
+                <div class = "ducatsbox">{{equipment.equipmentCost}}</div>
             </span>
         </li>
     </ul>

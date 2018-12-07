@@ -132,13 +132,11 @@
 
   .equipment .equipmentframe{
     float: left;
-    width: 280px;
+    width: 235px;
+    height: 235px;
     text-align: center;
-    border-style: groove;
-    border-color: #9a191a;
-    padding: 10px;
+    border-radius: 15%;
     color: #9a191a;
-    background-color: #13100d;
   } 
 
   .equipment .equipmentframe:hover{
@@ -157,17 +155,12 @@
     background-color: antiquewhite;
   }
 
-  .equipment .equipmentframe .equipmentname{
-    text-align: center;
-    font-family: buckingham;
-    font-size: larger
-  }
+  
 
   .equipment .equipmentframe .equipmentimage{    
-    width: 200;
-    text-align: center;
-    position: relative;
-    left: 10px;
+    float: left;
+    width: 230px;
+    height:230px;
   }
 
   .equipment .equipmentframe .equipmentimage:hover{
@@ -177,10 +170,13 @@
   }
 
   .equipment .equipmentframe .equipmentcost{
-    float: right;
-    width: 100;    
-    font-size: large;
-    clear: right;
+    position: relative;  
+    color: whitesmoke;  
+    left: 160px;
+    top: -54px; 
+    width: 20px;       
+    font-size: xx-large;    
+    font-family: buckingham;
   }
 
   .factionicon{
