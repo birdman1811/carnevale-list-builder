@@ -1,7 +1,10 @@
 <div>
 <ul class="factions">
   <li *ngFor="let faction of factions" (click)="onSelect(faction)">
-    <span class="factionbadge"><img class = "factionicon" src="{{faction.reverseicon}}" ></span>
+    
+    <div class="factionbadge"><img class = "factionicon" src="{{faction.reverseicon}}">
+    
+  </div>
     </li>
 </ul>
 <br>

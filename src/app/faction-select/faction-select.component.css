@@ -101,6 +101,31 @@
     
   }
 
+
+
+/* Tooltip text */
+.factionbadge .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #9a191a;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;  
+  position: relative;
+  z-index: 1;
+  font-family: Buckingham;
+  top:10%;
+  left: -30%;
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.factionbadge:hover .tooltiptext {
+  visibility: visible;
+}
+
+
   
 
  button {      
