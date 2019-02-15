@@ -28,8 +28,7 @@ export class FactionSelectComponent implements OnInit, OnDestroy {
   selectedFaction: Faction;
 
   onSelect(faction: Faction): void {
-    this.selectedFaction = faction;
-    
+    this.selectedFaction = faction;    
   } 
 
   constructor(
